@@ -1,20 +1,20 @@
 # jeorg-java-ee-7-test-drives
 
-[![Twitter URL](https://img.shields.io/twitter/url?logoColor=blue&style=social&url=https%3A%2F%2Fimg.shields.io%2Ftwitter%2Furl%3Fstyle%3Dsocial)](https://twitter.com/intent/tweet?text=%20Checkout%20this%20%40github%20repo%20by%20%40joaofse%20%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BB%3A%20https%3A//github.com/jesperancinha/java-test-drives)
-[![Generic badge](https://img.shields.io/static/v1.svg?label=GitHub&message=Java%20Test%20Drives&color=informational)](https://github.com/jesperancinha/java-test-drives)
-[![GitHub release](https://img.shields.io/github/release-pre/jesperancinha/java-test-drives.svg)](#)
+[![Twitter URL](https://img.shields.io/twitter/url?logoColor=blue&style=social&url=https%3A%2F%2Fimg.shields.io%2Ftwitter%2Furl%3Fstyle%3Dsocial)](https://twitter.com/intent/tweet?text=%20Checkout%20this%20%40github%20repo%20by%20%40joaofse%20%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BB%3A%20https%3A//github.com/jesperancinha/jeorg-java-ee-7-test-drives)
+[![Generic badge](https://img.shields.io/static/v1.svg?label=GitHub&message=Java%20EE%207%20Test%20Drives&color=informational)](https://github.com/jesperancinha/jeorg-java-ee-7-test-drives)
+[![GitHub release](https://img.shields.io/github/release-pre/jesperancinha/jeorg-java-ee-7-test-drives.svg)](#)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/89cc4b270cda4a448ce4fa895b30ec55)](https://www.codacy.com/manual/jofisaes/java-test-drives?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jesperancinha/java-test-drives&amp;utm_campaign=Badge_Grade)
-[![codebeat badge](https://codebeat.co/badges/70235530-f5e9-4254-a0d1-9dc7950c12cc)](https://codebeat.co/projects/github-com-jesperancinha-java-test-drives-master)
-[![CircleCI](https://circleci.com/gh/jesperancinha/java-test-drives.svg?style=svg)](https://circleci.com/gh/jesperancinha/java-test-drives)
-[![Build Status](https://travis-ci.org/jesperancinha/java-test-drives.svg?branch=master)](https://travis-ci.org/jesperancinha/java-test-drives)
-[![BCH compliance](https://bettercodehub.com/edge/badge/jesperancinha/java-test-drives?branch=master)](https://bettercodehub.com/)
-[![Build status](https://ci.appveyor.com/api/projects/status/eka55ffpbjkxq55p?svg=true)](https://ci.appveyor.com/project/jesperancinha/java-test-drives)
-[![Known Vulnerabilities](https://snyk.io/test/github/jesperancinha/java-test-drives/badge.svg)](https://snyk.io/test/github/jesperancinha/java-test-drives)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/89cc4b270cda4a448ce4fa895b30ec55)](https://www.codacy.com/manual/jofisaes/jeorg-java-ee-7-test-drives?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jesperancinha/jeorg-java-ee-7-test-drives&amp;utm_campaign=Badge_Grade)
+[![codebeat badge](https://codebeat.co/badges/70235530-f5e9-4254-a0d1-9dc7950c12cc)](https://codebeat.co/projects/github-com-jesperancinha-jeorg-java-ee-7-test-drives-master)
+[![CircleCI](https://circleci.com/gh/jesperancinha/jeorg-java-ee-7-test-drives.svg?style=svg)](https://circleci.com/gh/jesperancinha/jeorg-java-ee-7-test-drives)
+[![Build Status](https://travis-ci.org/jesperancinha/jeorg-java-ee-7-test-drives.svg?branch=master)](https://travis-ci.org/jesperancinha/jeorg-java-ee-7-test-drives)
+[![BCH compliance](https://bettercodehub.com/edge/badge/jesperancinha/jeorg-java-ee-7-test-drives?branch=master)](https://bettercodehub.com/)
+[![Build status](https://ci.appveyor.com/api/projects/status/eka55ffpbjkxq55p?svg=true)](https://ci.appveyor.com/project/jesperancinha/jeorg-java-ee-7-test-drives)
+[![Known Vulnerabilities](https://snyk.io/test/github/jesperancinha/jeorg-java-ee-7-test-drives/badge.svg)](https://snyk.io/test/github/jesperancinha/jeorg-java-ee-7-test-drives)
 
-[![GitHub language count](https://img.shields.io/github/languages/count/jesperancinha/java-test-drives.svg)](#)
-[![GitHub top language](https://img.shields.io/github/languages/top/jesperancinha/java-test-drives.svg)](#)
-[![GitHub top language](https://img.shields.io/github/languages/code-size/jesperancinha/java-test-drives.svg)](#)
+[![GitHub language count](https://img.shields.io/github/languages/count/jesperancinha/jeorg-java-ee-7-test-drives.svg)](#)
+[![GitHub top language](https://img.shields.io/github/languages/top/jesperancinha/jeorg-java-ee-7-test-drives.svg)](#)
+[![GitHub top language](https://img.shields.io/github/languages/code-size/jesperancinha/jeorg-java-ee-7-test-drives.svg)](#)
 
 ## Technologies used
 
@@ -99,6 +99,11 @@ In general modules have a few bash scripts and if they have all of them, then th
 
 <b style="color: red">Glassfish for Java EE 7 unfortunately only supports Java 6 and Java 8 in later versions. Newer versions are ready for JEE 8 and above. We will be using Java 11 in our test modules</b>
 
+## Build
+
+Note that if you want to build this project from the root, you need to use one of the JDK 11 or upper versions.
+
+<i>See [Hints&Tricks](https://github.com/jesperancinha/project-signer/blob/master/project-signer-templates/Hints%26Tricks.md) document for more details</i>
 
 ## Install JDK 11 using [SDK-MAN](https://sdkman.io/)
 

@@ -1,0 +1,5 @@
+os: linux
+language: java
+jdk: openjdk15
+script:
+  - mvn clean install

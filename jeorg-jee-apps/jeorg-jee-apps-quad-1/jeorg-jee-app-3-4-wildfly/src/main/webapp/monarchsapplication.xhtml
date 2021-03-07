@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 16/01/2021
+  Time: 19:22
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Title</title>
+</h:head>
+<h1>See the effects of opening new tabs, new browser instances, filling forms and refresh</h1>
+<h:body>
+    <h:form id="searchCustomerForm1">
+        <p><h:outputLabel for="albumName" value="Monarch name:"/>
+            <h:inputText id="albumName" value="#{applicationMonarchs.monarch.name}"/></p>
+        <p><h:outputLabel for="familyName" value="Monarch family:"/>
+            <h:inputText id="familyName" value="#{applicationMonarchs.monarch.family}"/></p>
+        <h:commandButton value="Save" action="#{applicationMonarchs.save}"/>
+    </h:form>
+</h:body>
+<p><a href="index.xhtml">Back</a></p>
+</html>

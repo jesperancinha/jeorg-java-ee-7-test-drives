@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 10/02/2021
+  Time: 11:59
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <title>Output Elemenst in the JavaServer Faces HTML library</title>
+</h:head>
+
+<h:body>
+    <p>
+        <h:outputFormat
+                value="If I get a dozens of beans then I have {0} beans and that means that I can give you {1} so that we have equally {2} beans! However if you get an extra dozen, then you will have {3} beans!">
+            <f:param value="12"/>
+            <f:param value="6"/>
+            <f:param value="6"/>
+            <f:param value="18"/>
+        </h:outputFormat>
+    </p>
+    <p>
+        <h:outputLabel value="This is a label for an special textBeanId" for="textBeanId"/>-
+        <h:outputText value="I've got some beans at home!" id="textBeanId"/>
+    </p>
+    <p>
+        <h:outputLink value="index.jsp">Let's go back!!</h:outputLink>
+    </p>
+</h:body>
+
+</html>

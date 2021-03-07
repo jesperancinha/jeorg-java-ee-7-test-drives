@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 23/01/2021
+  Time: 07:45
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <title>Touring with the Scissor Sisters and St. Vincent</title>
+</h:head>
+<h:body>
+    <h1>Touring with the Scissor Sisters and St. Vincent</h1>
+    <p>This exercise is about how to navigate, if you click the buttons in the following pages, you'll be recirected to tour places. Have fun!</p>
+
+    <h:form>
+        <p>
+            <h:commandLink value="Start Scissor Sisters!" action="#{tourBean.submitPage}">
+                <f:param name="page" value="sister"/>
+            </h:commandLink>
+        </p>
+    </h:form>
+    <h:form>
+        <p>
+            <h:commandLink value="Start St. Vincent!" action="#{tourBean.submitPage}">
+                <f:param name="page" value="vincent"/>
+            </h:commandLink>
+        </p>
+    </h:form>
+    <p>
+        <a href="index.xhtml">Back</a>
+    </p>
+</h:body>
+
+</html>

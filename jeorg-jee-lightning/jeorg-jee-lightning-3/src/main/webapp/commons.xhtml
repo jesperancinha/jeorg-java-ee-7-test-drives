@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 09/02/2021
+  Time: 15:38
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+<h:head>
+    <title>The common HTML tag components</title>
+    <link rel="stylesheet" href="love.css"/>
+</h:head>
+<h:body>
+    <h:form>
+        <h1>The common HTML tag components</h1>
+        <p>Type in your vegetable: <h:inputText value="#{basketBean.vegetable}"/></p>
+        <p>
+            <h:commandButton id="continueId" action="#{basketBean.activateVegetable()}" immediate="true"
+                             value="Submit with immediate On"/>
+        </p>
+        <p>
+            <h:commandButton id="createId" action="#{basketBean.activateVegetable()}" immediate="false"
+                             value="Submit with immediate Off"/>
+        </p>
+        <p>
+            <c:if test="#{basketBean.vegetable!=null}">
+                <p>You have currently selected: <h:outputText value="#{basketBean.vegetable}"
+                                                              style="color: deeppink; background: black"/></p>
+            </c:if>
+        </p>
+        <p>
+            The following control will not be rendered until a vegetable is available: <h:outputText
+                rendered="#{basketBean.vegetable != null}" value="#{basketBean.vegetable}"/>
+        </p>
+        <p>
+            <h:outputText value="#{basketBean.message1}"/>
+        </p>
+        <p>
+            <h:outputText value="#{basketBean.message2}" styleClass="love"/>
+        </p>
+        <p>
+            <h:outputText binding="#{basketBean.component}"/>
+        </p>
+    </h:form>
+    <p>
+        <a href="index.jsp">Back</a>
+    </p>
+</h:body>
+</html>

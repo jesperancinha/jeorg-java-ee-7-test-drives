@@ -1,0 +1,208 @@
+<html>
+<body>
+<h1>Kings of Portugal</h1>
+<a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/kings/promise.to.subjects/burgundy">Kings of the
+    Burgundy Dynasty with a Waterloo surprise</a>
+
+<h1>Get The Kings Per RegEx</h1>
+<ul>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/kings/promise.to.subjects/burgundy/BUR0">Afonso
+        I</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/kings/promise.to.subjects/burgundy/BUR1">Sancho
+        I</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/kings/promise.to.subjects/burgundy/BUR2">Afonso
+        II</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/kings/promise.to.subjects/burgundy/BUR3">Sancho
+        II</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/kings/promise.to.subjects/burgundy/BUR4">Afonso
+        III</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/kings/promise.to.subjects/burgundy/BUR5">Dinis
+        I</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/kings/promise.to.subjects/burgundy/BUR6">Afonso
+        IV</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/kings/promise.to.subjects/burgundy/BUR7">Pedro
+        I</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/kings/promise.to.subjects/burgundy/BUR8">Fernando
+        I</a></li>
+</ul>
+
+<h1>@Stateless, @Stateful and @Singleton with the Kings!</h1>
+<h2>Typical Configuration</h2>
+<ul>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/stateless">Stateless plain
+        call</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/stateless/pop">Stateless affecting
+        value</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/stateful">Stateful plain call</a>
+    </li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/stateful/pop">Stateful affecting
+        value</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/singleton">Singleton plain
+        call</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/singleton/pop">Singleton affecting
+        value</a></li>
+</ul>
+<h2>Default @RequestScoped configuration</h2>
+<ul>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/def/stateless">Stateless plain
+        call</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/def/stateless/pop">Stateless
+        affecting
+        value</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/def/stateful">Stateful plain
+        call</a>
+    </li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/def/stateful/pop">Stateful
+        affecting
+        value</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/def/singleton">Singleton plain
+        call</a></li>
+    <li><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/def/singleton/pop">Singleton
+        affecting
+        value</a></li>
+</ul>
+<h2>Main visualization</h2>
+<a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/historyDelivery.jsp">Test page with all the beans via
+    JSP</a>
+<h1>Pseudonyms List. Distinguish between more specific end points from more generic ones.</h1>
+<p><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/pseudonyms/burgundy/Sancho%20I">Sancho
+    I - Specific endpoint</a></p>
+<p><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/pseudonyms/burgundy/Afonso%20I">Afonso
+    I - Generic endpoint - @PathParam</a></p>
+<p><a href="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/pseudonyms/burgundy?id=4">Unpredictable
+    I - @QueryParam</a></p>
+<h1>Send messages to Kings of the Burgundy house with entity providers</h1>
+<h2>Via Param</h2>
+<form method="POST"
+      action="http://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/messages/sendMessage/form">
+    <textarea name="message">
+*** God Save the King
+*** Afonso I
+*** Dinis I
+    </textarea>
+    <input type="submit" value="Send Message To King!">
+</form>
+<h2>Via AJAX and full body post</h2>
+<script>
+    function sendMessageToKing() {
+        var ajaxPostRequest = new XMLHttpRequest();
+        ajaxPostRequest.open("POST", "/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/app/history/messages/sendMessage");
+        ajaxPostRequest.onreadystatechange = function () {
+            if (ajaxPostRequest.readyState === 4) {
+                console.log(ajaxPostRequest.response);
+                document.getElementById("messageACKId").innerHTML = ajaxPostRequest.response;
+
+            }
+        }
+        ajaxPostRequest.setRequestHeader("Content-type", "application/text");
+        ajaxPostRequest.send(document.getElementById('messageBodyId').value)
+    }
+
+</script>
+<textarea id="messageBodyId" name="message">
+*** God Save the King
+*** Afonso I
+*** Dinis I
+</textarea>
+<input type="submit" value="Send" onclick="sendMessageToKing()">
+<h3>ACK</h3>
+<div id="messageACKId"></div>
+
+<h1>House of Aviz</h1>
+<script>
+    var wsocket;
+
+    function connect() {
+        wsocket = new WebSocket("ws://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/aviz");
+        wsocket.onmessage = onMessage;
+    }
+
+    function onMessage(evt) {
+        document.getElementById("webSocketResult1Id").innerHTML = evt.data
+    }
+
+    window.addEventListener("load", connect, false);
+</script>
+<script>
+    var wsocket2;
+
+    function connect2() {
+        wsocket2 = new WebSocket("ws://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/aviz/interpreter");
+        wsocket2.onmessage = onMessage2;
+    }
+
+    function onMessage2(evt) {
+        document.getElementById("webSocketResult2Id").innerHTML = evt.data
+    }
+
+    window.addEventListener("load", connect2, false);
+</script>
+<button onclick="wsocket.send('Can I be a king?'); wsocket2.send('Your Majesty, I don\'t know what to say!')">Click to
+    be a King!
+</button>
+<div id="webSocketResult1Id"></div>
+<div id="webSocketResult2Id"></div>
+
+
+<h1>Sending encoded messages in Caesar 13 format</h1>
+<script>
+    var secretMessage = 'wbnb v jnf xvat bs cbeghtny ur vf erpbtavmrq puvrsyl sbe uvf ebyr va cbeghtnyf ivpgbel va n fhpprffvba jne jvgu pnfgvyr cerfreivat uvf pbhagelf vaqrcraqrapr naq rfgnoyvfuvat gur nivm  be wbnavan qlanfgl ba gur cbeghthrfr guebar';
+    var wsocket3;
+
+    function connect3() {
+        wsocket3 = new WebSocket("ws://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/aviz/security");
+        wsocket3.onmessage = onMessage3;
+    }
+
+    function onMessage3(evt) {
+        document.getElementById("webSocketResult3Id").innerHTML = evt.data
+    }
+
+    window.addEventListener("load", connect3, false);
+</script>
+<script>
+    var wsocket4;
+
+    function connect4() {
+        wsocket4 = new WebSocket("ws://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/aviz/security/noencoding");
+        wsocket4.onmessage = onMessage4;
+    }
+
+    function onMessage4(evt) {
+        document.getElementById("webSocketResult4Id").innerHTML = evt.data
+    }
+
+    window.addEventListener("load", connect4, false);
+</script>
+<h3>You are about to send this:</h3>
+<h3>wbnb v jnf xvat bs cbeghtny ur vf erpbtavmrq puvrsyl sbe uvf ebyr va cbeghtnyf ivpgbel va n fhpprffvba jne jvgu
+    pnfgvyr cerfreivat uvf pbhagelf vaqrcraqrapr naq rfgnoyvfuvat gur nivm be wbnavan qlanfgl ba gur cbeghthrfr
+    guebar</h3>
+<button onclick="wsocket3.send(secretMessage); wsocket4.send(secretMessage);">Click for a bit of history</button>
+
+<div id="webSocketResult3Id"></div>
+<div id="webSocketResult4Id"></div>
+
+<h1>Sending partial Messages</h1>
+<script>
+    var wsocket5;
+
+    function connect5() {
+        wsocket5 = new WebSocket("ws://localhost:8080/jee-app-3-1-wildfly-1.0.0-SNAPSHOT/aviz/interpreter/mass");
+        wsocket5.onmessage = onMessage5;
+    }
+
+    function onMessage5(evt) {
+        document.getElementById("webSocketResult5Id").innerHTML = evt.data
+    }
+
+    window.addEventListener("load", connect5, false);
+</script>
+<button onclick="wsocket5.send('This is supposed to be a huge message')">Click for a huge bit of history</button>
+<button onclick="wsocket5.send(new Uint32Array('This is supposed to be a huge message'))">Click for a huge bit of
+    history in bytes
+</button>
+
+<div id="webSocketResult5Id"></div>
+</body>
+</html>

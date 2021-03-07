@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 17/01/2021
+  Time: 17:52
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Title</title>
+</h:head>
+
+<h:body>
+
+    <h1>Arias and Chorus</h1>
+
+    <table border="1" bordercolor="#000000">
+        <tr>
+            <td>
+                <h2>Music Memory</h2>
+                <a href="musicmemory.xhtml">Strange mix. Madonna and Faun</a>
+                <p><i>@Cacheable</i></p>
+            </td>
+            <td>
+                <h2>Creating Wallets and Pens</h2>
+                <a href="merchandise.xhtml">Wallets and Pens</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Find your way into the websockets</h2>
+                <a href="ariaschorus/socket">Send a thousand dreams via a websockets client</a>
+                <p><i>@ClientEndpoint, WebSocketContainer, ContainerProvider, RemoteEndpoint</i></p>
+            </td>
+            <td>
+                <h2>Get an Anywhere Is excerpt of lyrics and learn about Timers!</h2>
+                <a href="ariaschorus/minute">Trigger the timer</a>
+                <p><i>@Resource, @Timeout, TimerService, Timer</i></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Create a Music Producer</h2>
+                <a href="producer.xhtml">We'll create it using @Embeddable and using @IdClass </a>
+                <p>
+                    <i>Key things to remember are that @IdClass only applies to TYPE</i>
+                    <i>@Embeddable applies to TYPE</i>
+                    <i>@EmbeddedId applies to METHOD and FIELD</i>
+                </p>
+            </td>
+            <td>
+                <h2>Create a Venue</h2>
+                <a href="venues.xhtml">We'll create Values using Attribute Converter</a>
+                <p>
+                    <i>We can use @Convert or @Converter</i>
+                    <i>@Converter(autoApply = true)</i>
+                    <i>@Convert(converter = CustomConverter</i>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Walpurgisnacht</h2>
+                <a href="ariaschorus/record;name=Luna;artist=Faun">Let's get the json of this album using Matrix attributes</a>
+                <p>
+                    <i>We can use different parameters @CookieParam, @QueryParam, @PathParam, @MatrixParam, @HeaderParam, @FormParam</i>
+                </p>
+            </td>
+            <td>
+                <h2>Watch Faun Live! - Testing Persistence RESOURCE_LOCAL and JTA</h2>
+                <p><a href="concerts.xhtml">Check</a></p>
+                <p><i>A resource local implies that entities are locally managed</i></p>
+                <p><i>This means that they have to be declared in the persistence.xml file</i></p>
+                <p><i>It also means that transactions won't be accessible in the injectable entity manager</i></p>
+                <p><i>They are, however accessible if the EntityManager is created via code</i></p>
+                <p>
+                    <i>JTA allows for automatic Entity scanning and UserTransaction management or Container management</i>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>A placeholder</h2>
+                <a href="search.xhtml">The Books of Trees Placeholder</a>
+                <p>
+                    <i>The attribute placeholder exists in http://www.w3.org/1999/xhtml and in http://xmlns.jcp.org/jsf/passthrough</i>
+                </p>
+            </td>
+            <td>
+                <h2>This Mortal Coil Publisher</h2>
+                <p><a href="coil.xhtml">Run a Facelet</a></p>
+                <p><a href="ariaschorus/album">Run The Servlet and check the logs</a></p>
+                <p>
+                    <i>We can use initializer method parameter injection or just a standard parameter injection</i>
+                </p>
+                <p>
+                    <i>Either way we will see the publisher, except when using the @Inject with a Get</i>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Sending with encoders</h2>
+                <p>
+                    <button onclick="cleanAll();wsocket.send(getSong());">Send Handmade Heaven as a TEXT!</button>
+                </p>
+                <p>
+                    <button onclick="cleanAll();wsocket.send(toBinary(getSong()));">Send Handmade Heaven as a BINARY!</button>
+                </p>
+                <div id="webSocketResult1Id"></div>
+                <h2>Sending without encoders</h2>
+                <p>
+                    <button onclick="cleanAll();wsocket2.send(getSong());">Send Handmade Heaven as a TEXT!</button>
+                </p>
+                <p>
+                    <button onclick="cleanAll();wsocket2.send(toBinary(getSong()));">Send Handmade Heaven as a BINARY!</button>
+                </p>
+                <div id="webSocketResult2Id"></div>
+                <p>
+                    <i>You do not need encoders. You can do it, but if you are sending either texts or binaries, you don't need to convert anything</i>
+                </p>
+
+            </td>
+            <td>
+                <h2>Kyla La Grange makes beautiful music. Would it be considered celtic?</h2>
+                <a href="ariaschorus/notceltic">Let's check!</a>
+                <p>
+                    <i>System output will just print to console and not to the JSP. The variable exception is available to the JSP context and also the Servlet context</i>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Redirect</h2>
+                <h:form>
+                    <p><h:commandButton value="Visit My Homepage" action="#{redirectBean.redirect}"/></p>
+                </h:form>
+            </td>
+            <td>
+                <p>
+                    <a href="logout.jsp">Force Session Logout</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function getSong() {
+            return JSON.stringify({
+                "artist": "Marina",
+                "song": "Handmade Heaven",
+                "lyricExtract": "In this handmade heaven"
+            });
+        }
+
+        function toBinary(string) {
+            const codeUnits = new Uint16Array(string.length);
+            for (let i = 0; i &lt; codeUnits.length; i++) {
+                codeUnits[i] = string.charCodeAt(i);
+            }
+            return codeUnits;
+        }
+
+        var wsocket;
+
+        function connect() {
+            wsocket = new WebSocket("ws://localhost:8080/jee-mastery-app-2-1.0.0-SNAPSHOT/ariaschorus/lyrics");
+            wsocket.onmessage = onMessage;
+        }
+
+        function onMessage(evt) {
+            document.getElementById("webSocketResult1Id").innerHTML = evt.data
+        }
+
+        var wsocket2;
+
+        function connect2() {
+            wsocket2 = new WebSocket("ws://localhost:8080/jee-mastery-app-2-1.0.0-SNAPSHOT/ariaschorus/noencoding/lyrics");
+            wsocket2.onmessage = onMessage2;
+        }
+
+        function onMessage2(evt) {
+            document.getElementById("webSocketResult2Id").innerHTML = evt.data
+        }
+
+        function cleanAll() {
+            document.getElementById("webSocketResult1Id").innerHTML = "";
+            document.getElementById("webSocketResult2Id").innerHTML = "";
+        }
+
+
+        window.addEventListener("load", connect, false);
+        window.addEventListener("load", connect2, false);
+    </script>
+</h:body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <title>JSF Tutorial!</title>
+    <h:outputStylesheet library="css" name="styles1.css"/>
+</h:head>
+
+<h:body>
+    <h:outputLabel value="Hello! This is a servlet!"/>
+
+    <h2>This is what using outputSylesheet can do for you</h2>
+    <p>What a great day!</p>
+    <p>
+        <a href="index.jsp">Back</a>
+    </p>
+
+    <h2>This is what graphicImage can do for you</h2>
+    <h:graphicImage library="images" name="Ijsel_nl.JPG"/>
+
+    <h2>This is what graphicImage can do for you in another way</h2>
+    <h:graphicImage value="#{resource['images:Ijsel_nl.JPG']}"/>
+
+    <h2>This is what message can do for you</h2>
+    <h:form>
+        <p>Enter a number outside the range 1 to 10 to see a message: <h:inputText id="numberId">
+            <f:validateLongRange minimum="1" maximum="10"/>
+        </h:inputText></p>
+        <h:message  showSummary="true" showDetail="false" for="numberId"/>
+    </h:form>
+
+    <p>
+        <a href="index.jsp">Back</a>
+    </p>
+
+</h:body>
+
+</html>

@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:underground="http://soap.bands.girl.jee.jtd.jesperancinha.org/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <underground:bandMembers>
+        </underground:bandMembers>
+    </soapenv:Body>
+</soapenv:Envelope>

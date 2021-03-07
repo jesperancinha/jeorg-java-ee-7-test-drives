@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<h1>Kings and Queens of The Netherlands</h1>
+<h2>You are logged in as <h:outputText value="${request.userPrincipal}"/></h2>
+<h2>Your user is a Manager? <h:outputText value="${request.isUserInRole('Manager')}"/></h2>
+<h2>Your user is a Civilian? <h:outputText value="${request.isUserInRole('Civilian')}"/></h2>
+<h2>Your user is an OranjeNassau? <h:outputText value="${request.isUserInRole('OranjeNassau')}"/></h2>
+<p>Please check Readme.md for more username/password combinations</p>
+<p>For now admin is a Manager and admin2 is a Civilian. Both of them have password admin</p>
+<a href="http://localhost:8080/jee-app-3-3-wildfly-1.0.0-SNAPSHOT/history/dynasties">History</a>
+
+<h1>Check the crown!</h1>
+<a href="http://localhost:8080/jee-app-3-3-wildfly-1.0.0-SNAPSHOT/history/crown">Crown</a>
+
+<h1>Kings and Queens arrive to the palace</h1>
+<p>
+    <a href="http://localhost:8080/jee-app-3-3-wildfly-1.0.0-SNAPSHOT/app/arrival/Maurits">Trigger message without context. Maurits. Please refresh to see the effect on instantiated beans in the context. Please note the detail.</a>
+</p>
+<p>
+    <a href="http://localhost:8080/jee-app-3-3-wildfly-1.0.0-SNAPSHOT/app/arrival/transaction/Maurits">Trigger message under a transactional context. Maurits. Please refresh to see the effect on instantiated beans in the context. Please note the detail.</a>
+</p>
+
+<h1>Log out</h1>
+<p><a href="logout.jsp">Easy log out</a></p>
+</body>
+</html>

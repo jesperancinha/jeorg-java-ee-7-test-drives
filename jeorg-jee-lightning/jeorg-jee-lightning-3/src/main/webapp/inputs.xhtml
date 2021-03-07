@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 09/02/2021
+  Time: 18:08
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<h:head>
+    <title>Title</title>
+</h:head>
+
+<h:body>
+    <h:form enctype="multipart/form-data">
+        <p>
+            First package of nuts is a package of: <h:inputText value="#{nutsBean.nutType1}"/>
+        </p>
+        <p>
+            Second package of nuts is a package of: <h:inputTextarea value="#{nutsBean.nutType2}"/>
+        </p>
+        <p>
+            Year is:
+            <h:inputText value="#{nutsBean.year}">
+                <f:validateLongRange minimum="1900" maximum="2021"/>
+            </h:inputText>
+        </p>
+        <p>
+            Your secret nut is: <h:inputSecret value="#{nutsBean.secretNut}"/>
+        </p>
+        <p>
+            Your hidden nut would be here... <h:inputHidden value="${nutsBean.hiddenNut}"/>
+        </p>
+        <p>
+            <h:outputText value="This is the secret value: #{nutsBean.secretNut}"
+                          rendered="#{nutsBean.nutType1 !=null}"/>
+        </p>
+        <p>
+            <h:outputText value="This is the hidden nut: #{nutsBean.hiddenNut}"
+                          rendered="#{nutsBean.nutType1 !=null}"/>
+        </p>
+        <p>
+            Upload a file! An file!<h:inputFile value="#{nutsBean.file}"/>
+        </p>
+        <p>
+            <h:commandButton action="#{nutsBean.logResults}" value="Submit values"/>
+        </p>
+    </h:form>
+    <p>
+        <a href="index.jsp">Back</a>
+    </p>
+</h:body>
+</html>

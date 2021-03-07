@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Registry>
+    <Bands>
+        <Band>
+            <Name>Mis-Teeg</Name>
+            <Members>
+                <Member>
+                    <Name>Sabrina Washington</Name>
+                </Member>
+                <Member>
+                    <Name>Alesha Dixon</Name>
+                </Member>
+                <Member>
+                    <Name>Su-Elise Nash</Name>
+                </Member>
+                <Member>
+                    <Name>Zena McNally</Name>
+                </Member>
+                <Member>
+                    <Name>Tina Barrett</Name>
+                </Member>
+            </Members>
+            <Albums>
+                <Album>
+                    <Name>Eye Candy</Name>
+                    <Songs>
+                        <Song>
+                            <Name>Scandalous</Name>
+                            <Duration>5</Duration>
+                        </Song>
+                    </Songs>
+                </Album>
+            </Albums>
+        </Band>
+    </Bands>
+</Registry>

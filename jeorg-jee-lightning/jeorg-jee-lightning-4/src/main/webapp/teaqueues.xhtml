@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 11/02/2021
+  Time: 16:04
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Title</title>
+</h:head>
+
+<h:body>
+    <h1>Submit your teas via JMS Queue!</h1>
+    <h:form>
+        <p>
+            <h:commandButton value="Submit" action="#{teaService.action}"/>
+        </p>
+    </h:form>
+    <p>
+        Tea 1:
+        <h:outputText value="#{teaService.tea1}"/>
+    </p>
+    <p>
+        Tea 2:
+        <h:outputText value="#{teaService.tea2}"/>
+    </p>
+    <p>
+        <a href="index.jsp">Back</a>
+    </p>
+</h:body>
+
+</html>

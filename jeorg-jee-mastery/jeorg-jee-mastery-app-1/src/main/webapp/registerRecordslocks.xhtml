@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core">
+<f:view>
+    <h:outputLabel value="Register records with a composite key and now with Locks!"/>
+    <h:form>
+        <table border="1" bordercolor="#000000">
+            <tr>
+                <th>Album 1</th>
+                <th>Album 2</th>
+            </tr>
+            <tr>
+                <td>
+                    <p><h:outputLabel for="albumId" value="Album name:"/>
+                        <h:inputText id="albumId" value="${albumLocksBean.albumName}"/></p>
+                    <p><h:outputLabel for="artistId" value="Artist name:"/>
+                        <h:inputText id="artistId" value="${albumLocksBean.artist}"/></p>
+                    <p><h:outputLabel for="yearId" value="Year:"/>
+                        <h:inputText id="yearId" value="${albumLocksBean.year}"/></p>
+                    <p><h:outputLabel for="l1Id" value="Lyric 1:"/>
+                        <h:inputText id="l1Id" value="${albumLocksBean.lyric1}"/></p>
+                    <p><h:outputLabel for="l2Id" value="Lyric 2:"/>
+                        <h:inputText id="l2Id" value="${albumLocksBean.lyric2}"/></p>
+                    <p><h:outputLabel for="l3Id" value="Lyric 3:"/>
+                        <h:inputText id="l3Id" value="${albumLocksBean.lyric3}"/></p>
+                </td>
+                <td>
+                    <p><h:outputLabel for="album2Id" value="Album name:"/>
+                        <h:inputText id="album2Id" value="${albumLocksBean.albumName2}"/></p>
+                    <p><h:outputLabel for="artist2Id" value="Artist name:"/>
+                        <h:inputText id="artist2Id" value="${albumLocksBean.artist2}"/></p>
+                    <p><h:outputLabel for="year2Id" value="Year:"/>
+                        <h:inputText id="year2Id" value="${albumLocksBean.year2}"/></p>
+                    <p><h:outputLabel for="l21Id" value="Lyric 1:"/>
+                        <h:inputText id="l21Id" value="${albumLocksBean.lyric21}"/></p>
+                    <p><h:outputLabel for="l22Id" value="Lyric 2:"/>
+                        <h:inputText id="l22Id" value="${albumLocksBean.lyric22}"/></p>
+                    <p><h:outputLabel for="l23Id" value="Lyric 3:"/>
+                        <h:inputText id="l23Id" value="${albumLocksBean.lyric23}"/></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>
+                        <h:commandButton action="${albumLocksBean.submit()}" value="Submit with OPTIMISTIC lock"/>
+                    </p>
+                    <p><i>How to:</i></p>
+                    <p>Change a field and make multiple submits -> It should fail:</p>
+                    <p>If two threads try to update the same identity at the same time, one of them will fail</p>
+                    <p>This is most commonly used because it is a much less costly operation</p>
+                    <p>It is also a way to make sure that when we write, we know what and where are we writing to</p>
+                    <p>Change a field and make one submit -> It should work:</p>
+                    <p>Since no thread is competing to update the entity, it also means that we know the previous entity state</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>
+                        <h:commandButton action="${albumLocksBean.submitPessimistic()}"
+                                         value="Submit with PESSIMISTIC lock"/>
+                    </p>
+                    <p><i>How to:</i></p>
+                    <p>Change a field and make multiple submits -> It should not fail:</p>
+                    <p>It will take a long time to process, depending on how many requests you make</p>
+                    <p>All of them are allowed though</p>
+                    <p>This is hardly used, because of the risks of deadlock and long processing time</p>
+                    <p>Change a field and make one submit -> It should work:</p>
+                    <p>It will always work for the same reasons</p>
+                </td>
+            </tr>
+        </table>
+
+    </h:form>
+
+    <table border="1" bordercolor="#000000">
+        <tr>
+            <th>Album name</th>
+            <th>Artist</th>
+            <th>Year</th>
+        </tr>
+        <c:forEach var="a" items="${albumLocksBean.examples}">
+            <tr>
+                <td>${a.album}</td>
+                <td>${a.artist}</td>
+                <td>${a.year}</td>
+            </tr>
+        </c:forEach>
+    </table>
+
+    <h:form>
+
+        <table border="1" bordercolor="#000000">
+            <tr>
+                <th>Album 1</th>
+                <th>Album 2</th>
+            </tr>
+            <tr>
+                <td>
+                    <p><h:outputLabel for="sl1Id" value="Lyric 1:"/>
+                        <h:inputText id="sl1Id" value="${albumLocksBean.lyric1}"/></p>
+                    <p><h:outputLabel for="sl2Id" value="Lyric 2:"/>
+                        <h:inputText id="sl2Id" value="${albumLocksBean.lyric2}"/></p>
+                    <p><h:outputLabel for="sl3Id" value="Lyric 3:"/>
+                        <h:inputText id="sl3Id" value="${albumLocksBean.lyric3}"/></p>
+                </td>
+                <td>
+                    <p><h:outputLabel for="sl21Id" value="Lyric 1:"/>
+                        <h:inputText id="sl21Id" value="${albumLocksBean.lyric21}"/></p>
+                    <p><h:outputLabel for="sl22Id" value="Lyric 2:"/>
+                        <h:inputText id="sl22Id" value="${albumLocksBean.lyric22}"/></p>
+                    <p><h:outputLabel for="sl23Id" value="Lyric 3:"/>
+                        <h:inputText id="sl23Id" value="${albumLocksBean.lyric23}"/></p>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>
+                        <h:commandButton action="${albumLocksBean.getAlbums()}" value="Search"/>
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+
+    </h:form>
+    <p><a href="index.xhtml">Back</a></p>
+</f:view>
+</html>

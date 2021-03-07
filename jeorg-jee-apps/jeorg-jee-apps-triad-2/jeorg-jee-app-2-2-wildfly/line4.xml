@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:bt="http://soap.bands.girl.jee.jtd.jesperancinha.org/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <bt:sayYoullBeThere>
+            <arg0>Last time that we had this conversation</arg0>
+        </bt:sayYoullBeThere>
+    </soapenv:Body>
+</soapenv:Envelope>

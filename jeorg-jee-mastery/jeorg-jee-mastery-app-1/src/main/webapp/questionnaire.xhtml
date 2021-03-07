@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 18/01/2021
+  Time: 18:49
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Questionnaire about music</title>
+</h:head>
+<h:body>
+    <h:form>
+        <p><h:outputText value="Q: When did Diana Ross released her single I'm coming out?"/></p>
+        <p>Answer: <h:inputText value="#{questionsBean.myAnswer}"/></p>
+        <p><h:commandButton action="#{questionsBean.answerOne}" value="Submit with rollback"/></p>
+        <p><h:commandButton action="#{questionsBean.answerTwo}" value="Submit without rollback"/></p>
+    </h:form>
+
+    <p>Result: <h:outputText value="#{questionsBean.question1.answer}"/></p>
+    <p><h:outputText value="#{questionsBean.question1.correctAnswer}"/></p>
+
+    <p><a href="index.xhtml">Back</a></p>
+</h:body>
+</html>

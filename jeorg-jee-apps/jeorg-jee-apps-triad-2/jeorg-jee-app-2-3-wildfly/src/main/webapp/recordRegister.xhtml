@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <title>Title</title>
+</head>
+<body>
+<h1>Registering a record</h1>
+
+<f:view>
+    <p><h:messages id="messages"/>
+        <h:form id="searchCustomerForm1">
+            <p><h:outputText styleClass="h2"
+                             value="This form will not work. The Date field does not have a proper filter"/></p>
+            <p><h:outputLabel for="albumName" value="Album Name:"/>
+                <h:inputText id="albumName" value="#{albumRegistry.newAlbum.albumName}"/></p>
+            <p>
+                <h:outputLabel
+                        for="joinedDate" value="Publishing Date:"/>
+                <h:inputText id="joinedDate" value="#{albumRegistry.newAlbum.publishingDate}"/></p>
+            <h:commandButton value="Save" action="#{albumRegistry.register}"/>
+        </h:form>
+        <h:form id="searchCustomerForm2">
+            <p><h:outputText styleClass="h2" value="This form will  work. The Date field does have a proper filter"/>
+            </p>
+            <p><h:outputLabel for="albumName2" value="Album Name:"/>
+                <h:inputText id="albumName2" value="#{albumRegistry.newAlbum.albumName}"/></p>
+            <p>
+                <h:outputLabel
+                        for="joinedDate2" value="Publishing Date:"/>
+                <h:inputText id="joinedDate2" value="#{albumRegistry.newAlbum.publishingDate}">
+                    <f:convertDateTime pattern="yyyy-MMM-dd"/>;
+                </h:inputText>
+            </p>
+            <h:commandButton value="Save" action="#{albumRegistry.register}"/>
+        </h:form>
+    </p>
+</f:view>
+</body>
+</html>

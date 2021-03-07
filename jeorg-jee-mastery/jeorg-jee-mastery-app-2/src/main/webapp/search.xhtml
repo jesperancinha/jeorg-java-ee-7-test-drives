@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+<f:view>
+    <h:outputLabel value="Hello, world"/>
+    <h:form>
+        <h2>These are the valid placeholders</h2>
+        <p>
+            <input jsf:id="search" placeholder="Search a voice" jsf:value="Enya"/>
+        </p>
+        <p>
+            <h:inputText p:placeholder="Search a voice"/>
+        </p>
+        <h2>These are the invalid placeholders</h2>
+        <p>
+            <h:inputText p:placeholder="Search a voice" value="The Book of Days"/>
+        </p>
+        <p>
+            <input id="search3" jsf:placeholder="Search a voice" value="The Book of Days"/>
+        </p>
+        <p>
+            <input id="search2" jsf:placeholder="Search a voice"/>
+        </p>
+
+        <p><i>The attribute placeholder exists in http://www.w3.org/1999/xhtml and in http://xmlns.jcp.org/jsf/passthrough</i></p>
+        <p><a href="index.xhtml">Back</a></p>
+    </h:form>
+
+</f:view>
+</html>

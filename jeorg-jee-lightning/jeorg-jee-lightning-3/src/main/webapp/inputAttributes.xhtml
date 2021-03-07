@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 10/02/2021
+  Time: 10:31
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Input Attributes</title>
+</h:head>
+<h:body>
+    <h1>Common Input HTML Tag Attributes</h1>
+
+    <h:form>
+        <p>Make me a valid number!
+        <h:inputText value="#{magicBean.nBeans}" converter="javax.faces.Byte" converterMessage="It must be a Byte!" dir="RTL" label="I have to be a Byte"
+                     lang="pt-PT" required="true" requiredMessage="You have to give me a value!"
+                     validator="#{magicBean.magicValidator}" valueChangeListener="#{magicBean.beanChange}"/>
+        </p>
+        <p>Make me a valid number! (... with a Validator Message)
+        <h:inputText value="#{magicBean.nBeans}" converter="javax.faces.Byte" converterMessage="It must be a Byte!" dir="RTL" label="I have to be a Byte"
+                     lang="pt-PT" required="true" requiredMessage="You have to give me a value!"
+                     validator="#{magicBean.magicValidator}" validatorMessage="This bean is not Prime!"/>
+        </p>
+        <p>
+            <h:commandButton action="#{magicBean.activateBeans}" value="Submit values" immediate="false"/>
+        </p>
+    </h:form>
+    <p>
+        <a href="index.jsp">Back</a>
+    </p>
+</h:body>
+
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 13/02/2021
+  Time: 09:55
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Title</title>
+</h:head>
+
+<h:body>
+    <h1>Using Locks to plant a plant!!</h1>
+   <ul>
+       <li>In this page submit a plant</li>
+       <li>In another page submit another plant</li>
+       <li>In yet another page just open this</li>
+       <li>You should see that the last write operation will hang for about 20 seconds (you have to open one after the other)</li>
+       <li>The read operation should take just as long</li>
+       <li>Now do the same thing but in this case, just open 2 pages</li>
+       <li>You should now see that they lastonly 10 seconds</li>
+       <li>This proves that the write operation block everything, and the read operation always happens.</li>
+
+
+       <h:form>
+           <p> Please insert a plant name:
+           <h:inputText value="#{vasePlanterBean.planted}"/>
+           </p>
+           <p>
+               <h:commandButton value="Submit your plant!" action="#{vasePlanterBean.setPlantedPlant}"/>
+           </p>
+           <p>
+               <h:outputText value="#{vasePlanterBean.plantedPlant}"/>
+           </p>
+       </h:form>
+   </ul>
+
+</h:body>
+
+</html>

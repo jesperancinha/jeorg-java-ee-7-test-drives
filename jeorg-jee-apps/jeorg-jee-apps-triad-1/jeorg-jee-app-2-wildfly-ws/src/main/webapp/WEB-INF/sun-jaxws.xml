@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+           version="2.0">
+    <endpoint name="kitchen-herbs" implementation="org.jesperancinha.jtd.jee.soap.KitchenHerbsServerImpl"
+              url-pattern="/kitchen-herbs"/>
+</endpoints>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 08/02/2021
+  Time: 14:06
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Title</title>
+</h:head>
+<h:outputStylesheet library="css" name="math.css"/>
+<h:body>
+    <h1>Wild Mathematics</h1>
+
+    <h2>((x, y) -> x + y / 2) (2,9)</h2>
+    <p><h:outputText value="#{((x, y) -> x + y / 2) (2,9)}"/></p>
+
+    <h2>List of [1,2,3,4,5,6]</h2>
+    <p><h:outputText value="#{[1,2,3,4,5,6]}"/></p>
+
+    <h2>Get property by name: vegetableBean['chivesWeight'] and multiply by 10 fold</h2>
+    <p><h:outputText value="#{vegetableBean['chivesWeight']}"/></p>
+    <p><h:outputText value="#{vegetableBean['chivesWeight'] * 10}"/></p>
+
+    <h2>Reserved words same example vegetableBean['chivesWeight'] le 30 and vegetableBean['chivesWeight'] * 10 lt 500</h2>
+    <p><h:outputText value="#{vegetableBean['chivesWeight'] le 30}"/></p>
+    <p><h:outputText value="#{vegetableBean['chivesWeight'] * 10 lt 500}"/></p>
+
+    <h2>Dividion 4/5 or 4 div 5</h2>
+    <p><h:outputText value="#{4 div 5}"/></p>
+    <p><h:outputText value="#{4 / 5}"/></p>
+
+    <h2>Ordered List of [9,3,5,1,9,4,3]</h2>
+    <p><h:outputText value="#{[9,3,5,1,9,4,3].stream().sorted().toList()}"/></p>
+
+    <p>
+        <a href="index.jsp">Back</a>
+    </p>
+</h:body>
+
+</html>

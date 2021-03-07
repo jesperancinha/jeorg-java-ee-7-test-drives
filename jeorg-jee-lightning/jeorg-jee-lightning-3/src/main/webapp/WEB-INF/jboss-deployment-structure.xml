@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+    <ear-subdeployments-isolated>false</ear-subdeployments-isolated>
+    <deployment>
+        <exclude-subsystems>
+            <subsystem name="jaxrs" />
+            <subsystem name="webservices" />
+        </exclude-subsystems>
+    </deployment>
+</jboss-deployment-structure>

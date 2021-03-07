@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <p>
+        <h:outputLabel value="Hello, world"/>
+    </p>
+    <p>
+        <h:outputLabel value="This is a Demo St. Vincent tour page. Welcome!"/>
+    </p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LM9sq5GENbE" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+
+    </iframe>
+
+    <h:form>
+        <p>
+            <h:commandLink value="Go Back To Start" action="#{tourBean.submitPage}">
+                <f:param name="page" value="back"/>
+            </h:commandLink>
+        </p>
+    </h:form>
+    <p><a href="index.xhtml">Back</a></p>
+</f:view>
+</html>

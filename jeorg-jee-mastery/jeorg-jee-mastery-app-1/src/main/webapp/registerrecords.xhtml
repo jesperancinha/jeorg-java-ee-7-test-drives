@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 17/01/2021
+  Time: 17:22
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<h:head>
+    <title>Register records at store</title>
+</h:head>
+
+<h:body>
+    <h1>Register records at store</h1>
+
+    <h:form id="recordFormId">
+        <p><h:outputText for="recordTitleId" value="Record Title:"/>
+            <h:inputText id="recordTitleId" value="#{registerCart.newRecord.name}"/></p>
+
+        <p><h:outputText for="recordTypeId" value="Record Type:"/>
+            <h:inputText id="recordTypeId" value="#{registerCart.newRecord.type}"/></p>
+
+        <p><h:outputText for="recordYearId" value="Record Year:"/>
+            <h:inputText id="recordYearId" value="#{registerCart.newRecord.year}"/></p>
+
+        <p><h:outputText for="recordArtistId" value="Record Artist:"/>
+            <h:inputText id="recordArtistId" value="#{registerCart.newRecord.artist}"/></p>
+
+        <p><h:commandButton value="Save" action="#{registerCart.saveRecord()}"/></p>
+    </h:form>
+    <h2>Try with these examples, or your favorite alums! 💿</h2>
+    <table border="1" bordercolor="#000000">
+        <tr>
+            <th>Album Name</th>
+            <th>Type</th>
+            <th>Artist</th>
+            <th>Release Year</th>
+        </tr>
+        <c:forEach items="#{registerCart.exampleRecords}" var="record">
+            <tr>
+                <td>${record.name}</td>
+                <td>${record.type}</td>
+                <td>${record.artist}</td>
+                <td>${record.year}</td>
+            </tr>
+        </c:forEach>
+    </table>
+    <p><a href="index.xhtml">Back</a></p>
+</h:body>
+</html>

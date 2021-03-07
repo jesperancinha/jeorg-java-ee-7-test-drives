@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+>
+<head>
+    <title>Soul Music</title>
+</head>
+<body>
+<h1>Little Red Corvette - Servlet Lifecycle</h1>
+<a href="http://localhost:8080/jee-app-2-3-wildfly-1.0.0-SNAPSHOT/corvette">Try Little Red Corvette</a>
+
+<h1>Midnight Star - JSP Paramters</h1>
+<form method="post" action="midas.jsp">
+    <h2>Members</h2>
+    <p><input type="text" value="Belinda Lipscomb" name="membera"/></p>
+    <p><input type="text" value="Melvin Gentry" name="memberb"/></p>
+    <p><input type="text" value="Kenneth Gant" name="memberc"/></p>
+    <p><input type="text" value="Bobby Lovelace" name="memberd"/></p>
+    <p><input type="text" value="Bo Watson" name="membere"/></p>
+    <p><input type="text" value="Bill Simmons" name="memberf"/></p>
+    <p><input type="text" value="I like music" name="review"/></p>
+    <input type="submit" value="Submit Band Members"/>
+</form>
+
+<h1>Check if it is Soul! Exception handlig and error-page</h1>
+<form method="POST" action="soulchecker">
+    Music: <input name="song" value="In My Darkest Hour"/>
+    <input type="submit" value="Submit"/>
+</form>
+<form method="POST" action="soulchecker">
+    Music: <input name="song" value="She's a super lady"/>
+    <input type="submit" value="Submit"/>
+</form>
+
+
+<h1>Soul is great! Check Error page forwarding</h1>
+<a href="http://localhost:8080/jee-app-2-3-wildfly-1.0.0-SNAPSHOT/soulisgreat.jsp">Error forwarding</a>
+
+<h1>Michael Jackson - Rock with you - type and class in the bean JSP annotation</h1>
+<a href="http://localhost:8080/jee-app-2-3-wildfly-1.0.0-SNAPSHOT/simpleLyric.jsp">Donna Summer - She works hard for the money - JSP bean type and class</a>
+
+<h1>Registering a record with format</h1>
+<a href="http://localhost:8080/jee-app-2-3-wildfly-1.0.0-SNAPSHOT/recordRegister.xhtml">Register Angie Stoe's Unexpected</a>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 18/01/2021
+  Time: 22:54
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+
+<h:head>
+    <title>Searching for a trade-pff</title>
+</h:head>
+
+<h:body>
+    <h1>Rare records store</h1>
+    <h:form>
+        <p>
+            <h:outputFormat value="{0}">
+                <f:param name="placeholder" value="Rare Records Search"/>
+            </h:outputFormat>
+        </p>
+        <p>
+            <input jsf:id="recordCorrectId" placeholder="Search Rare Records Here" jsf:value="search"></input>
+        </p>
+        <p>
+            <h:inputText p:placeholder="Search Rare Records Here" p:title="You can also put a record here...."/>
+        </p>
+        <p>
+            <h:inputText>
+                <f:passThroughAttribute name="placeholder" value="Search Rare Records Here"/>
+            </h:inputText>
+        </p>
+        <p>We will send Moby - Disco Lies when pressing this button:</p>
+        <p><h:commandButton value="Search"
+                            action="#{songBean.submit}">
+            <f:param name="artist" value="Moby"/>
+            <f:param name="song" value="Disco Lies"/>
+        </h:commandButton></p>
+    </h:form>
+    <p>Song is: ${songBean.song}</p>
+    <p>Made by: ${songBean.artist}</p>
+    <p><a href="index.xhtml">Back</a></p>
+</h:body>
+
+</html>

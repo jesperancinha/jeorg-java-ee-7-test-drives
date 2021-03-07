@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 10/02/2021
+  Time: 21:41
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+<h:head>
+    <title>Title</title>
+</h:head>
+
+<h:body>
+    <h:form>
+        <p>selectBooleanCheckbox
+            <h:selectBooleanCheckbox
+                    id="almondsId"
+                    value="#{shoppingCard.buyAlmonds}">
+                <h:outputLabel for="almondsId" rendered="true"
+                               value="Will you buy Almonds?"/>
+            </h:selectBooleanCheckbox>
+        </p>
+        <p>selectManyCheckbox
+            <h:selectManyCheckbox value="#{shoppingCard.seeds}">
+                <f:selectItem itemValue="almonds" itemLabel="Almond"/>
+                <f:selectItem itemValue="beans" itemLabel="Beans"/>
+                <f:selectItem itemValue="lentils" itemLabel="Lentils"/>
+                <f:selectItem itemValue="peas" itemLabel="Peas"/>
+                <f:selectItem itemValue="chickpeas" itemLabel="Chickpeas"/>
+            </h:selectManyCheckbox>
+        </p>
+        <p>selectManyListbox
+            <h:selectManyListbox value="#{shoppingCard.plants}">
+                <f:selectItem itemValue="almond plant" itemLabel="Almond Plant"/>
+                <f:selectItem itemValue="bean plant" itemLabel="Bean Plant"/>
+                <f:selectItem itemValue="lentil plant" itemLabel="Lentil Plant"/>
+                <f:selectItem itemValue="pea plant" itemLabel="Pea Plant"/>
+                <f:selectItem itemValue="chickpea plant" itemLabel="Chickpea Plant"/>
+            </h:selectManyListbox>
+        </p>
+        <p>selectManyMenu
+            <h:selectManyMenu value="#{shoppingCard.selectedPlant}"
+                              var="plant"
+                              showCheckbox="true"
+                              style="width:300px; height: 50px">
+                <f:selectItems value="#{shoppingCard.plantDetails}" var="pl"
+                               itemLabel="#{pl.plant}" itemValue="#{pl.height}"/>
+            </h:selectManyMenu>
+        </p>
+        <p>selectOneListbox
+            <h:selectOneListbox value="#{shoppingCard.grownPlant}">
+                <f:selectItem itemValue="1" itemLabel="Almond Plant"/>
+                <f:selectItem itemValue="2" itemLabel="Bean Plant"/>
+                <f:selectItem itemValue="3" itemLabel="Lentil Plant"/>
+                <f:selectItem itemValue="4" itemLabel="Pea Plant"/>
+                <f:selectItem itemValue="5" itemLabel="Chickpea Plant"/>
+            </h:selectOneListbox>
+        </p>
+        <p>selectOneMenu
+            <h:selectOneMenu value="#{shoppingCard.greenPlant}">
+                <f:selectItem itemValue="1" itemLabel="Almond Plant"/>
+                <f:selectItem itemValue="2" itemLabel="Bean Plant"/>
+                <f:selectItem itemValue="3" itemLabel="Lentil Plant"/>
+                <f:selectItem itemValue="4" itemLabel="Pea Plant"/>
+                <f:selectItem itemValue="5" itemLabel="Chickpea Plant"/>
+            </h:selectOneMenu>
+        </p>
+        <p>selectOneRadio
+            <h:selectOneRadio value="#{shoppingCard.superPlant}">
+                <f:selectItem itemValue="1" itemLabel="Almond Plant"/>
+                <f:selectItem itemValue="2" itemLabel="Bean Plant"/>
+                <f:selectItem itemValue="3" itemLabel="Lentil Plant"/>
+                <f:selectItem itemValue="4" itemLabel="Pea Plant"/>
+                <f:selectItem itemValue="5" itemLabel="Chickpea Plant"/>
+            </h:selectOneRadio>
+        </p>
+        <p>
+            <h:commandButton action="#{shoppingCard.sendOrder}" value="Send Order"/>
+        </p>
+        <p>
+            <h:outputFormat value="You just bought these {0}:" rendered="#{shoppingCard.seeds != null}">
+                <f:param value="seeds"/>
+            </h:outputFormat>
+            <c:forEach var="seed" items="#{shoppingCard.seeds}">
+                <p>
+                    <h:outputText id="seedsId" value="#{seed}" rendered="#{seed != null}"/>
+                </p>
+            </c:forEach>
+        </p>
+        <p>
+            <h:outputFormat value="You just bought these {0}:" rendered="#{shoppingCard.plants != null}">
+                <f:param value="plants"/>
+            </h:outputFormat>
+            <c:forEach var="plant" items="#{shoppingCard.plants}">
+                <p>
+                    <h:outputText id="plantsId" value="#{plant}" rendered="#{plant != null}"/>
+                </p>
+            </c:forEach>
+        </p>
+        <p>
+            <h:outputFormat value="You just selected these {0}:" rendered="#{shoppingCard.selectedPlant != null}">
+                <f:param value="plants"/>
+            </h:outputFormat>
+            <c:forEach var="plant" items="#{shoppingCard.selectedPlant}">
+                <p>
+                    <h:outputText value="#{plant}" rendered="#{plant != null}"/>
+                </p>
+            </c:forEach>
+        </p>
+        <p>
+            <h:outputFormat for="grownPlantId" value="You just selected this grown {0}:" rendered="#{shoppingCard.grownPlant != null}">
+                <f:param value="plant"/>
+            </h:outputFormat>
+            <h:outputText id="grownPlantId" value="#{shoppingCard.grownPlant}" rendered="#{shoppingCard.grownPlant != null}"/>
+        </p>
+        <p>
+            <h:outputFormat for="greenPlantId" value="You just selected this green {0}:" rendered="#{shoppingCard.greenPlant != null}">
+                <f:param value="plant"/>
+            </h:outputFormat>
+            <h:outputText id="greenPlantId" value="#{shoppingCard.greenPlant}" rendered="#{shoppingCard.greenPlant != null}"/>
+        </p>
+        <p>
+            <h:outputFormat for="superPlantId" value="You just selected this super {0}:" rendered="#{shoppingCard.superPlant != null}">
+                <f:param value="plant"/>
+            </h:outputFormat>
+            <h:outputText id="superPlantId" value="#{shoppingCard.superPlant}" rendered="#{shoppingCard.superPlant != null}"/>
+        </p>
+    </h:form>
+    <p>
+        <a href=" index.jsp">Back</a>
+    </p>
+</h:body>
+
+</html>

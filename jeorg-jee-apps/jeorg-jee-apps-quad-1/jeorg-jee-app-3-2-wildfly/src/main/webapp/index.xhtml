@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<h1>History of Spain</h1>
+<h:form>
+    <h2>Kings of Spain</h2>
+    <h:commandLink action="kings">
+        <h:outputText value="Go To the list of kings via Outcome"/>
+    </h:commandLink>
+</h:form>
+<h:form>
+    <h2>Kings of Spain</h2>
+    <h:commandLink action="kingsAction">
+        <h:outputText value="Go To the list of kings via Action"/>
+    </h:commandLink>
+</h:form>
+
+<h1>The Kings namespaces and the JSF complexities</h1>
+<a href="http://localhost:8080/jee-app-3-2-wildfly-1.0.0-SNAPSHOT/kingsPageAction.xhtml">Check the different namespace JSF tags</a>
+
+<h1>Counting to 3 with fmt</h1>
+<a href="http://localhost:8080/jee-app-3-2-wildfly-1.0.0-SNAPSHOT/messages.jsp">Count to 3 in Spanish and English</a>
+
+<h1>Visit the Palace! Who's the caller?</h1>
+<p>
+    <a href="http://localhost:8080/jee-app-3-2-wildfly-1.0.0-SNAPSHOT/app/history/palace/rest/palace">Visit the palace via REST service and be the caller!</a>
+</p>
+<p>
+    <a href="http://localhost:8080/jee-app-3-2-wildfly-1.0.0-SNAPSHOT/history/palace/servlet">Visit the palace via Servlet and be the caller!</a>
+</p>
+<p>Check Readme.md for username/password details for different monarchs</p>
+</body>
+</html>

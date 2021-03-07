@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejb-jar PUBLIC '-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans
+2.0//EN' 'http://java.sun.com/dtd/ejb-jar_2_2.dtd'>
+<ejb-jar>
+    <assembly-descriptor>
+        <interceptor-binding>
+            <target-name>org.jesperancinha.jtd.jee.lightning4.NothingBean</target-name>
+            <interceptor-class>org.jesperancinha.jtd.jee.lightning4.interceptors.SunInterceptor</interceptor-class>
+            <interceptor-class>org.jesperancinha.jtd.jee.lightning4.interceptors.RainInterceptor</interceptor-class>
+            <method-name>doNothing</method-name>
+        </interceptor-binding>
+    </assembly-descriptor>
+</ejb-jar>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 07/02/2021
+  Time: 10:53
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:composite="http://xmlns.jcp.org/jsf/composite">
+
+<h:head>
+    <title>Composite NL Cucumber</title>
+</h:head>
+
+<h:body>
+    <composite:interface>
+        <composite:attribute name="weight" required="true"/>
+    </composite:interface>
+
+    <composite:implementation>
+        <h:outputLabel value="Komkommer gewicht(weight in Kg):"/>
+        <h:inputText value="#{cc.attrs.weight}"/>
+    </composite:implementation>
+</h:body>
+
+</html>

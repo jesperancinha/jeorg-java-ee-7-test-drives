@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:outputLabel value="Hello, world"/>
+    <p>#{salesBean.salesNumber}</p>
+    <p>#{salesBean.salesNumberRandom}</p>
+
+    <h:form id="reg">
+        <h2>Member Registration</h2>
+        <p>Enforces annotation-based constraints defined on the
+            model class.</p>
+        <h:panelGrid columns="4" columnClasses="titleCell">
+            <h:outputLabel for="name" value="Name:"/>
+            <h:inputText id="name" value="#{newSessionAlbum.albumName}"/>
+            <h:message for="name" errorClass="invalid"/>
+            <p style="text-align: center">--- // ---</p>
+
+            <h:outputLabel for="year" value="Year:"/>
+            <h:inputText id="year" value="#{newSessionAlbum.year}"/>
+            <h:message for="year" errorClass="invalid"/>
+            <p style="text-align: center">--- // ---</p>
+
+            <h:outputLabel for="artist" value="Artist:"/>
+            <h:inputText id="artist" value="#{newSessionAlbum.artist}"/>
+            <h:message for="artist" errorClass="invalid"/>
+            <p style="text-align: center">--- // ---</p>
+
+            <h:outputLabel for="email" value="Email:"/>
+            <h:inputText id="email" value="#{newSessionAlbum.email}"/>
+            <h:message for="email" errorClass="invalid"/>
+            <p style="text-align: center">--- // ---</p>
+
+            <h:outputLabel for="sales" value="Sales #:"/>
+            <h:inputText id="sales" value="#{newSessionAlbum.sales  }"/>
+            <h:message for="sales" errorClass="invalid"/>
+            <p style="text-align: center">--- // ---</p>
+
+        </h:panelGrid>
+
+        <p>
+            <h:panelGrid columns="1">
+                <h:commandButton id="register"
+                                 action="#{albumSessionController.realCreateAlbum()}"
+                                 value="Register" styleClass="register"/>
+                <h:messages styleClass="messages"
+                            errorClass="invalid" infoClass="valid"
+                            warnClass="warning" globalOnly="true"/>
+
+                <h:outputText value="Last Id = #{albumSessionController.lastId}. If you press again, It will try to update artist with None!. This will not be possible."
+                              rendered="${albumSessionController.lastId!=null}"/>
+
+                <h:outputText value="You won't see any exception and the artist #{albumSessionController.lastArtist} will not be updated!"/>
+            </h:panelGrid>
+        </p>
+    </h:form>
+    <br/>
+    <a href="index.html">Back</a>
+    <a href="albums.xhtml">Refresh</a>
+</f:view>
+</html>

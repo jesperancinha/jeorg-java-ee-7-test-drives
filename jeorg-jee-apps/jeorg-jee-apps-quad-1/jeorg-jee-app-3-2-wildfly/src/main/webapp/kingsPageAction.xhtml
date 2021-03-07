@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough" xmlns:c="http://java.sun.com/jsp/jstl/core"
+>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<h1>Kings and Queens Titles</h1>
+<p>I like to move it move it!</p>
+<h:form>
+
+    <h2>I've got some placeholder for you, your Heighness.</h2>
+
+    <table border="1" bordercolor="#000000">
+        <tr>
+            <th>
+                Description
+            </th>
+            <th>
+                Result
+            </th>
+        </tr>
+        <tr>
+            <td>
+                HTML
+            </td>
+            <td>
+                <input id="search0" placeholder="Search by title"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Created with elements for HTML5 library
+            </td>
+            <td>
+                <input jsf:id="search1" placeholder="Search by title"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Created with attributes for HTML5 library (Active)
+            </td>
+            <td>
+                <h:inputText id="search5" value="#{kingsAndQueensMB.filterString}"
+                             p:placeholder="Search by title"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Created with core passthrough attributes
+            </td>
+            <td>
+                <h:inputText id="search8">
+                    <f:passThroughAttribute name="placeholder" value="Search by title"/>
+                </h:inputText>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Using Param  we can format a message. (We can actually do much more, but for now this is just changing one paramater of a string)
+            </td>
+            <td>
+                <h:outputFormat id="search9" value="This is where - {0} - goes!">
+                    <f:param name="placeholder" value="A text goes"/>
+                </h:outputFormat>
+            </td>
+        </tr>
+    </table>
+
+    <p><h:commandButton value="Search by title" action="#{kingsAndQueensMB.searchFrom}"/></p>
+
+    <c:if test="#{kingsAndQueensMB.result != null}">
+        <h2>Result:</h2>
+        <h:outputText value="#{kingsAndQueensMB.result}"/>
+    </c:if>
+</h:form>
+</body>
+</html>

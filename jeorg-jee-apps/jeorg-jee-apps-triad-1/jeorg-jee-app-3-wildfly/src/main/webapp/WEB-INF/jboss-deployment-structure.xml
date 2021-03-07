@@ -1,0 +1,13 @@
+<jboss-deployment-structure>
+    <ear-subdeployments-isolated>false</ear-subdeployments-isolated>
+    <deployment>
+        <dependencies>
+            <module name="org.jboss.ejb-client"/>
+            <module name="org.jboss.ejb3"/>
+            <module name="org.jboss.ejb.remote.protocol"/>
+            <module name="org.wildfly.clustering.ejb.infinispan"/>
+            <module name="org.wildfly.clustering.ejb.spi"/>
+            <module name="org.wildfly.clustering.infinispan.spi"/>
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>

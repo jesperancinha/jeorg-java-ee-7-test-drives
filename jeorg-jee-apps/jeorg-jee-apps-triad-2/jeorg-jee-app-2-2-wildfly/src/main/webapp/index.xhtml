@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jstl/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <title>JSP - Hello World</title>
+</head>
+<body>
+<br/>
+<h1>URL rewriting exercises:</h1>
+<h2>Viva Forever</h2>
+<form action="left">
+    <input type="hidden" name="leftName" value="Viva"/><br/>
+    <input type="submit" value="Build Lyric Name"/>
+</form>
+
+<h1>Session management exercises:</h1>
+<h2>Girl band store</h2>
+<label>(Hint: User and password are equal and the user is admin...)</label>
+<form action="LoginGirlBandRecordStoreServlet" method="post">
+    Username: <input type="text" name="username" value="admin"/>
+    <br/>
+    Password: <input type="password" name="password" value="admin"/>
+    <br/>
+    <input type="submit" value="Login"/>
+</form>
+
+<h1>WelFilter exercises:</h1>
+<h2>Girl Power Filter</h2>
+<f:view>
+    <p>#{girlPowerBean.logged}</p>
+    <h:form>
+        <h:commandButton value="Log Girl Power Filter" action="#{girlPowerBean.login}">
+        </h:commandButton>
+    </h:form>
+    <c:if test="#{girlPowerBean.logged}">
+        <a href="http://localhost:8080/jee-app-2-2-wildfly-1.0.0-SNAPSHOT/app/secure/lyrics/spice">VIP Spice Page!</a>
+    </c:if>
+</f:view>
+
+<h1>WebFiler exercises using web.xml and order</h1>
+<a href="http://localhost:8080/jee-app-2-2-wildfly-1.0.0-SNAPSHOT/CaghtUpInTheMiddle">Caugh Up In the Middle</a>
+
+<h1>WebFiler exercises using web.xml, order and direct references via web.xml</h1>
+<a href="http://localhost:8080/jee-app-2-2-wildfly-1.0.0-SNAPSHOT/CaghtUpInTheMiddle2">Caugh Up In the Middle 2</a>
+
+<h1>Love JSP'2</h1>
+<p>
+    <a href="http://localhost:8080/jee-app-2-2-wildfly-1.0.0-SNAPSHOT/love.jsp">This is page about JSP's in their pure form and what they can do.</a>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<head>
+    <title>FORM based Login</title>
+</head>
+<body>
+<form method="POST" action="j_security_check">
+    <h:panelGrid columns="2">
+        <h:outputLabel id="userNameLabel" for="j_username"
+                       value="Username:"/>
+        <h:inputText id="j_username" name="j_username" autocomplete="off" value="admin"/>
+        <h:outputLabel id="passwordLabel" for="j_password"
+                       value="Password:"/>
+        <h:inputSecret id="j_password" name="j_password" autocomplete="off" value="admin"/>
+        <div/>
+        <h:panelGroup>
+            <h:commandButton type="submit" value="Login"/>
+            <h:commandButton type="reset" value="Clear"/>
+        </h:panelGroup>
+    </h:panelGrid>
+    <p>A few things to remember</p>
+    <ol>
+        <li>User admin has password admin and it is only allowed to make POST requests in the <b>security</b> servlets
+        </li>
+        <li>User admin2 has password admin and it is only allowed to make GET requests in the <b>security</b> servlets
+        </li>
+        <li>User admin has role Manager</li>
+        <li>User admin2 has role Organizer</li>
+    </ol>
+    <p><a href="/jee-mastery-app-1-1.0.0-SNAPSHOT/index.xhtml">Back</a></p>
+
+</form>
+</body>
+</html>

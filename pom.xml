@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.jesperancinha.jtd</groupId>
+    <artifactId>jeorg-java-ee-7-test-drives</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <modules>
+        <module>jeorg-jee-apps</module>
+        <module>jeorg-jee-mastery</module>
+        <module>jeorg-jee-lightning</module>
+    </modules>
+
+    <name>Java Test Drives</name>
+    <properties>
+        <!-- External -->
+        <consolerizer.version>2.0.2</consolerizer.version>
+        <lombok.version>1.18.10</lombok.version>
+        <mockito.all>1.9.5</mockito.all>
+
+        <!-- Internal -->
+        <java-test-drives-commons>1.0.0-SNAPSHOT</java-test-drives-commons>
+
+        <!-- Test -->
+        <junit-jupiter.version>5.5.1</junit-jupiter.version>
+        <assertj-core.version>3.13.2</assertj-core.version>
+
+        <!-- Plugins -->
+        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>3.0.0-M3</maven-surefire-plugin.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Internal Dependencies -->
+            <dependency>
+                <groupId>org.jesperancinha.jtd</groupId>
+                <artifactId>jeorg-java-test-drives-commons</artifactId>
+                <version>${java-test-drives-commons}</version>
+            </dependency>
+            <!-- External Dependencies -->
+            <dependency>
+                <groupId>org.jesperancinha.console</groupId>
+                <artifactId>consolerizer</artifactId>
+                <version>${consolerizer.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>1.4.200</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.15</version>
+            </dependency>
+            <!-- Test dependencies -->
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>${junit-jupiter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-core</artifactId>
+                <version>${assertj-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-all</artifactId>
+                <version>${mockito.all}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

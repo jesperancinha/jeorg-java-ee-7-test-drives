@@ -1,0 +1,13 @@
+<job xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="1.0" id="SendPeopleToShow">
+    <step id="process" next="finish">
+        <chunk item-count="1">
+            <reader ref="audienceItemReader"/>
+            <processor ref="audienceItemProcessor"/>
+            <writer ref="audienceItemWriter"/>
+        </chunk>
+    </step>
+    <step id="finish">
+        <batchlet ref="audienceBatchlet">
+        </batchlet>
+    </step>
+</job>

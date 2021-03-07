@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 21/01/2021
+  Time: 16:21
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <title>Title</title>
+</h:head>
+
+<h:body>
+    <f:view>
+        <h:form>
+            <h1>Record Scopes</h1>
+
+            <h2>Application Scoped</h2>
+            <p><h:outputText value="#{recordHighBean.applicationRecord}}"/></p>
+            <p><h:outputText value="#{recordApplicationBean.record}}"/></p>
+            <p>-><b><h:outputText value="#{recordApplicationBean.rec}}"/></b></p>
+
+            <h2>Session Scoped</h2>
+            <p><h:outputText value="#{recordHighBean.sessionRecord}}"/></p>
+            <p><h:outputText value="#{recordSessionBean.record}}"/></p>
+            <p>-><b><h:outputText value="#{recordSessionBean.rec}}"/></b></p>
+
+            <h2>View Scoped</h2>
+            <p><h:outputText value="#{recordHighBean.viewRecord}}"/></p>
+            <p><h:outputText value="#{recordViewBean.record}}"/></p>
+            <p>-><b><h:outputText value="#{recordViewBean.rec}}"/></b></p>
+
+            <h2>Request Scoped</h2>
+            <p><h:outputText value="#{recordHighBean.sessionRecord}}"/></p>
+            <p><h:outputText value="#{recordRequestBean.record}}"/></p>
+            <p>-><b><h:outputText value="#{recordRequestBean.rec}}"/></b></p>
+
+            <h:commandButton value="Check if View changes..." action="#{recordHighBean.submit}"/>
+
+            <p><a href="index.xhtml">Back</a></p>
+        </h:form>
+    </f:view>
+</h:body>
+
+</html>

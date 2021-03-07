@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:lt="http://lightning2.jee.jtd.jesperancinha.org/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <lt:sayHelloWorld>
+            <arg0>Joao</arg0>
+        </lt:sayHelloWorld>
+    </soapenv:Body>
+</soapenv:Envelope>

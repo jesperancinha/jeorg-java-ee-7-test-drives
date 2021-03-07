@@ -1,0 +1,38 @@
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:tns="http://soap.bands.girl.jee.jtd.jesperancinha.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns="http://schemas.xmlsoap.org/wsdl/"
+             targetNamespace="http://soap.bands.girl.jee.jtd.jesperancinha.org/" name="BeThereLyricsServiceImplService">
+    <types/>
+    <message name="sayYoullBeThere">
+        <part name="arg0" type="xsd:string"/>
+    </message>
+    <message name="sayYoullBeThereResponse">
+        <part name="return" type="xsd:string"/>
+    </message>
+    <portType name="BeThereLyricsService">
+        <operation name="sayYoullBeThere">
+            <input wsam:Action="http://soap.bands.girl.jee.jtd.jesperancinha.org/BeThereLyricsService/sayYoullBeThereRequest"
+                   message="tns:sayYoullBeThere"/>
+            <output wsam:Action="http://soap.bands.girl.jee.jtd.jesperancinha.org/BeThereLyricsService/sayYoullBeThereResponse"
+                    message="tns:sayYoullBeThereResponse"/>
+        </operation>
+    </portType>
+    <binding name="be-therePortBinding" type="tns:BeThereLyricsService">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc"/>
+        <operation name="sayYoullBeThere">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal" namespace="http://soap.bands.girl.jee.jtd.jesperancinha.org/"/>
+            </input>
+            <output>
+                <soap:body use="literal" namespace="http://soap.bands.girl.jee.jtd.jesperancinha.org/"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="BeThereLyricsServiceImplService">
+        <port name="be-therePort" binding="tns:be-therePortBinding">
+            <soap:address location="http://localhost:8080/jee-app-2-2-wildfly-1.0.0-SNAPSHOT/be-there"/>
+        </port>
+    </service>
+</definitions>

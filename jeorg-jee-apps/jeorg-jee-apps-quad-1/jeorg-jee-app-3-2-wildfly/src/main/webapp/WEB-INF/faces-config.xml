@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="https://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="https://xmlns.jcp.org/xml/ns/javaee
+              https://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    <navigation-rule>
+        <from-view-id>/index.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>kings</from-outcome>
+            <to-view-id>/kingsPage.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/index.xhtml</from-view-id>
+        <navigation-case>
+            <from-action>kingsAction</from-action>
+            <to-view-id>/kingsPageAction.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>

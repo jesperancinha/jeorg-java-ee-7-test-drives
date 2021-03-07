@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:outputFormat value="{0}, {1}!" style="font-size: 20px">
+        <f:param value="Hello"/>
+        <f:param value="world"/>
+    </h:outputFormat>
+    <br/>
+    <h:outputText value="Hello, world"/>
+    <br/>
+    <h:outputLabel value="Hello, world"/>
+    <p>#{salesBean.salesNumber}</p>
+    <p>#{salesBean.salesNumberRandom}</p>
+
+    <ui:repeat value="#{albumController.albumList}" var="album">
+        <li>
+            <div style="display: inline">
+                <h:link value="#{album.artist}" outcome="album">
+                    <f:param name="id" value="#{album.id}"/>
+                </h:link>
+                -
+                <h:link value="#{album.albumName}" outcome="album">
+                    <f:param name="id" value="#{album.id}"/>
+                </h:link>
+                -
+                <h:link value="#{album.year}" outcome="album">
+                    <f:param name="id" value="#{album.id}"/>
+                </h:link>
+            </div>
+        </li>
+    </ui:repeat>
+
+    <h:panelGroup rendered="#{not empty albumController.albumList}">
+        <em>We've got some albums here!</em>
+    </h:panelGroup>
+    <h:dataTable var="album" value="#{albumController.albumList}"
+                 rendered="#{not empty albumController.albumList}">
+        <h:column>
+            <f:facet name="header">Id</f:facet>
+            #{album.id}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Artist</f:facet>
+            #{album.artist}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Album Name</f:facet>
+            #{album.albumName}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Year</f:facet>
+            #{album.year}
+        </h:column>
+    </h:dataTable>
+
+    <br/>
+    <a href="index.html">Back</a>
+    <a href="albums-detailed.xhtml">Refresh</a>
+    <p>Notes:</p>
+    <ol>
+        <li><p>Check your logs. See how many times the list method has been called</p></li>
+    </ol>
+</f:view>
+</html>

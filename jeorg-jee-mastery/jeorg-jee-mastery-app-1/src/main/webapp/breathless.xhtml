@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: jofisaes
+  Date: 19/01/2021
+  Time: 21:39
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <title>Atemlos durch die Nacht</title>
+</h:head>
+
+<h:body>
+    <f:view locale="de_DE">
+        <f:loadBundle basename="messages" var="msg"/>
+        <p>🇩🇪<h:outputText value="#{msg.title}"/></p>
+    </f:view>
+    <f:view locale="pt_PT">
+        <f:loadBundle basename="messages" var="msg1"/>
+        <p>🇵🇹<h:outputText value="#{msg1.title}"/></p>
+    </f:view>
+    <f:view locale="es_ES">
+        <f:loadBundle basename="messages" var="msg2"/>
+        <p>🇪🇸<h:outputText value="#{msg2.title}"/></p>
+    </f:view>
+    <f:view locale="en_UK">
+        <f:loadBundle basename="messages" var="msg3"/>
+        <p>🇬🇧<h:outputText value="#{msg3.title}"/></p>
+    </f:view>
+    <f:view locale="nl_NL">
+        <f:loadBundle basename="messages" var="msg4"/>
+        <p>🇳🇱<h:outputText value="#{msg4.title}"/></p>
+    </f:view>
+
+    <f:view locale="de_DE">
+        🇩🇪<h:outputText value="#{bundle['title']}"/>
+        <p>In this case the title is associated with the general locale configuration</p>
+        <p>In the previous examples, we could get messages via a property resouorce bundle in a separate language</p>
+    </f:view>
+
+    <p><a href="index.xhtml">Back</a></p>
+</h:body>
+</html>

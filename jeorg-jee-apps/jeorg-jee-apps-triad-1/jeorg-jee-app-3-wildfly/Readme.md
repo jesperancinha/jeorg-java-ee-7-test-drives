@@ -54,8 +54,6 @@ The apps under [jee-apps](../..), cover lots of topics. For this app we cover:
 3. Start Wildfly with switch `-c standalone-full.xml`
 
 ## How to check your database in Intellj:
-
-
 ![alt img](./docs/h2-database-config.png)
 
 Database connection properties:
@@ -75,8 +73,6 @@ Database connection properties:
 1. URL -> `jdbc:h2:file:mem:records;AUTO_SERVER=TRUE`
 2. Username -> `sa`
 3. Password -> `sa`
-
-
 ## Run Arquillian tests
 
 Make sure port 9990 is available:
@@ -209,7 +205,6 @@ mvn clean install -Parq-wildfly-managed
 [![Generic badge](https://img.shields.io/static/v1.svg?label=GitHub&message=Markdowner%20Filter&color=yellow)](https://github.com/jesperancinha/markdowner/tree/master/markdowner-filter)
 [![alt text](https://raw.githubusercontent.com/jesperancinha/project-signer/master/project-signer-templates/icons-20/linkedin-20.png "LinkedIn")](https://www.linkedin.com/in/joaoesperancinha/)
 [![alt text](https://raw.githubusercontent.com/jesperancinha/project-signer/master/project-signer-templates/icons-20/xing-20.png "Xing")](https://www.xing.com/profile/Joao_Esperancinha/cv)
-[![alt text](https://raw.githubusercontent.com/jesperancinha/project-signer/master/project-signer-templates/icons-20/instagram-20.png "Instagram")](https://www.instagram.com/jesperancinha/)
 [![alt text](https://raw.githubusercontent.com/jesperancinha/project-signer/master/project-signer-templates/icons-20/tumblr-20.png "Tumblr")](https://jofisaes.tumblr.com/)
 [![alt text](https://raw.githubusercontent.com/jesperancinha/project-signer/master/project-signer-templates/icons-20/pinterest-20.png "Pinterest")](https://nl.pinterest.com/jesperancinha/)
 [![alt text](https://raw.githubusercontent.com/jesperancinha/project-signer/master/project-signer-templates/icons-20/quora-20.png "Quora")](https://nl.quora.com/profile/Jo%C3%A3o-Esperancinha)

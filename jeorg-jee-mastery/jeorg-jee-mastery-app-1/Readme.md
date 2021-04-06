@@ -357,7 +357,7 @@ curl -X GET http://localhost:8080/jeorg-jee-mastery-app-1-1.0.0-SNAPSHOT/app/fad
 - Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
 - Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
 
-## About me 👨🏽‍💻🚀
+## About me 👨🏽‍💻🚀🏳️‍🌈
 
 [![alt text](https://raw.githubusercontent.com/jesperancinha/project-signer/master/project-signer-templates/icons-20/JEOrgLogo-20.png "João Esperancinha Homepage")](http://joaofilipesabinoesperancinha.nl)
 [![Twitter Follow](https://img.shields.io/twitter/follow/joaofse?label=João%20Esperancinha&style=social "Twitter")](https://twitter.com/joaofse)

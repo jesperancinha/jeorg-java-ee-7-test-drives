@@ -57,8 +57,8 @@ public class Record implements Serializable {
 
     public static List<Record> allRecordExamples() {
         final var record0 = new Record();
-        record0.setName("Lila Fadista");
-        record0.setArtist("Fado Bicha");
+        record0.setName("Humanos LP");
+        record0.setArtist("Humanos");
         record0.setYear("2019");
         record0.setType("LP");
         final var record1 = new Record();

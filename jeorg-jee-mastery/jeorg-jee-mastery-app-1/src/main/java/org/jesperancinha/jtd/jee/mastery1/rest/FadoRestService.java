@@ -32,8 +32,8 @@ public class FadoRestService {
         BLUE.printGenericLn("Or maybe not. You probably noticed that your are not getting response with a HEAD request");
         BLUE.printGenericLn("Try doing this with just HEAD");
         final var record1 = new Record();
-        record1.setName("Lila Fadista");
-        record1.setArtist("Fado Bicha");
+        record1.setName("Humanos LP");
+        record1.setArtist("Humanos");
         record1.setYear("2019");
         record1.setType("LP");
         final List<Record> records = Arrays.asList(record1);
@@ -50,8 +50,8 @@ public class FadoRestService {
         BLUE.printGenericLn("Or maybe not. You probably noticed that your are not getting response with a HEAD request");
         BLUE.printGenericLn("Try doing this with just HEAD");
         final var record1 = new Record();
-        record1.setName("Lila Fadista");
-        record1.setArtist("Fado Bicha");
+        record1.setName("Humanos LP");
+        record1.setArtist("Humanos");
         record1.setYear("2019");
         record1.setType("LP");
         final List<Record> records = Arrays.asList(record1);

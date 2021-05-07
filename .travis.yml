@@ -1,5 +1,9 @@
-os: linux
+os:
+  - linux
+  - osx
+stage: JEOrg Java EE 7 Test Drives
 language: java
 jdk: openjdk15
 script:
-  - mvn clean install
+  - mvn clean install coveralls:report -Dconsolerizer.show=false -DrepoToken=${COVERALLS_TOKEN}
+  - bash <(curl -s https://codecov.io/bash)

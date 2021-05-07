@@ -69,8 +69,6 @@ ls WEB-INF/lib
 
 ## Curl requests
 
-1. O namorico do André
-
 ```bash
 curl -X HEAD http://localhost:8080/jeorg-jee-mastery-app-1-1.0.0-SNAPSHOT/app/fado/bands
 curl -X HEAD -I http://localhost:8080/jeorg-jee-mastery-app-1-1.0.0-SNAPSHOT/app/fado/bands
@@ -95,8 +93,7 @@ curl -X GET http://localhost:8080/jeorg-jee-mastery-app-1-1.0.0-SNAPSHOT/app/fad
 - [Melissa Etheridge](https://en.wikipedia.org/wiki/Melissa_Etheridge)
 - [Whaler (album)](https://en.wikipedia.org/wiki/Whaler_(album))
 - [Right Beside You (Sophie B. Hawkins song)](https://en.wikipedia.org/wiki/Right_Beside_You_(Sophie_B._Hawkins_song))
-- [Lila Fadista - Fado Bicha](https://www.qobuz.com/ie-en/album/lila-fadista-fado-bicha/l390otcj1c1db)
-- [Fado Bicha](https://www.facebook.com/fadobicha/)
+- [Humanos LP - Humanos](https://en.wikipedia.org/wiki/Humanos)
 - [You Spin Me Round (Like a Record)](https://en.wikipedia.org/wiki/You_Spin_Me_Round_(Like_a_Record))
 - [Farbenspiel](https://en.wikipedia.org/wiki/Farbenspiel)
 - [Atemlos durch die Nacht](https://en.wikipedia.org/wiki/Atemlos_durch_die_Nacht)
@@ -203,9 +200,9 @@ curl -X GET http://localhost:8080/jeorg-jee-mastery-app-1-1.0.0-SNAPSHOT/app/fad
       </a>
 </div>
 <div align="center">
-      <a title="Fado Bicha - O Namorico do André" href="https://www.youtube.com/watch?v=GrZv7FJGUKE">
+      <a title="Humanos - Muda De Vida - [ Official Music Video ]" href="https://www.youtube.com/watch?v=qK-WYZD4Bic">
      <img 
-          src="https://img.youtube.com/vi/GrZv7FJGUKE/0.jpg" 
+          src="https://img.youtube.com/vi/qK-WYZD4Bic/0.jpg" 
           style="width:10%;">
       </a>
       <a title="In-Grid - Tu Es Foutu (LAMUR)" href="https://www.youtube.com/watch?v=MZqlhQm7hv4">

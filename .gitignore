@@ -46,3 +46,9 @@ glassfish6
 
 ## Tomcat installations(s)
 apache-tomcat-*
+
+# Coveralls
+.coveralls.yml
+
+# Codecov
+codecov.yml

@@ -16,6 +16,7 @@
 
     <name>Java EE 7 Drives</name>
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- External -->
         <consolerizer.version>2.0.12</consolerizer.version>
         <lombok.version>1.18.10</lombok.version>

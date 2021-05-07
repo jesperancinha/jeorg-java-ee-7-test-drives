@@ -16,9 +16,6 @@ jobs:
       - checkout
       # Use mvn clean and package as the standard maven build phase
       - run:
-          name: Resolve dependencies
-          command: mvn dependency:resolve
-      - run:
           name: Build and Test
           command: mvn clean install
 

@@ -17,92 +17,92 @@
 
 #### Subjects
 
-1. `@PathParam`, `@RequestScoped`, `@Path`, `@GET`, `@Produces`, `MediaType`, `APPLICATION_JSON`
-2. `RegEx`, `@PathParam`, `@GET`
-3. `@Stateless`, `@Stateful`, `@Singleton`, `@RequestScoped`, `@Dependent`, `@ApplicationScoped`
-4. `Scope`, `@RequestScoped`
-5. `Specific`, `Generic`, `@GET`, `@Path`
-6. `@QueryParam`
-7. `MessageBodyReader`
-8. `MessageBodyWritter`
-9. `@ServerEndpoint`, `@OnMessage`, `@OnOpen`, `@OnError`, `@OnClose`, `getBasicRemote`, `sendText`
+1.  `@PathParam`, `@RequestScoped`, `@Path`, `@GET`, `@Produces`, `MediaType`, `APPLICATION_JSON`
+2.  `RegEx`, `@PathParam`, `@GET`
+3.  `@Stateless`, `@Stateful`, `@Singleton`, `@RequestScoped`, `@Dependent`, `@ApplicationScoped`
+4.  `Scope`, `@RequestScoped`
+5.  `Specific`, `Generic`, `@GET`, `@Path`
+6.  `@QueryParam`
+7.  `MessageBodyReader`
+8.  `MessageBodyWritter`
+9.  `@ServerEndpoint`, `@OnMessage`, `@OnOpen`, `@OnError`, `@OnClose`, `getBasicRemote`, `sendText`
 10. `Encoder.Text`, `Decoder.Text`, `init`, `destroy`, `decode`, `encode`, `encoders`, `decoders`
 11. `MessageHandler.Partial`, `MessageHandler.Whole`, `@OnMessage`, `isLast`
 
 #### Modules
 
-- [jee-app-3-1-wildfly](jee-app-3-1-wildfly)
+-   [jee-app-3-1-wildfly](jee-app-3-1-wildfly)
 
 ### [jee-app-3-2-wildfly](jee-app-3-2-wildfly) - History of Spain - 🇪🇸
 
 #### Subjects
 
-1. `navigation-rule`, `from-view-id`, `navigation-case`, `from-outcome`, `to-view-id`, `from-action`. `h:commandLink`
-2. `http://java.sun.com/jsp/jstl/core`, `forEach`, `EL`, `Expression Language`
-3. `xmlns:h="http://xmlns.jcp.org/jsf/html"`, `xmlns:jsf="http://xmlns.jcp.org/jsf"`
+1.  `navigation-rule`, `from-view-id`, `navigation-case`, `from-outcome`, `to-view-id`, `from-action`. `h:commandLink`
+2.  `http://java.sun.com/jsp/jstl/core`, `forEach`, `EL`, `Expression Language`
+3.  `xmlns:h="http://xmlns.jcp.org/jsf/html"`, `xmlns:jsf="http://xmlns.jcp.org/jsf"`
    , `xmlns:f="http://xmlns.jcp.org/jsf/core"`, `xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"`
-4. `<fmt:bundle`, `<fmt:message`, `<fmt:setBundle`, `<fmt:setLocale`
-5. `j_security_check`, `j_username`, `j_password`, `security-constraint`, `web-resource-collection`, `web-resource-name`
+4.  `<fmt:bundle`, `<fmt:message`, `<fmt:setBundle`, `<fmt:setLocale`
+5.  `j_security_check`, `j_username`, `j_password`, `security-constraint`, `web-resource-collection`, `web-resource-name`
    , `description`, `url-pattern`, `http-method`, `auth-constraint`, `role-name`, `security-role`, `login-config`
    , `auth-method`, `form-login-config`, `form-login-page`, `form-error-page`
-6. `getCallerPrincipal`, `isCallerInRole`, `SessionContext`, `@EJB`, `@Resource`
-7. `@Stateless`, `Stateful`, `isCallerInRole`, `@PreDestroy`, `@PostConstruct`
-8. `SessionContext.getCallerPrincial`, `HttpServletRequest.getUserPrincipal`
-9. `NONE`, `INTEGRAL`, `CONFIDENTIAL`
+6.  `getCallerPrincipal`, `isCallerInRole`, `SessionContext`, `@EJB`, `@Resource`
+7.  `@Stateless`, `Stateful`, `isCallerInRole`, `@PreDestroy`, `@PostConstruct`
+8.  `SessionContext.getCallerPrincial`, `HttpServletRequest.getUserPrincipal`
+9.  `NONE`, `INTEGRAL`, `CONFIDENTIAL`
 
 #### Modules
 
-- [jee-app-3-2-wildfly](jee-app-3-2-wildfly)
+-   [jee-app-3-2-wildfly](jee-app-3-2-wildfly)
 
 ### [jee-app-3-3-wildfly](jee-app-3-3-wildfly) - History of The Netherlands - 🇳🇱
 
 #### Subjects
 
-1. `ejb-jar.xml`,  `@RolesAllowed`, `ejb-jar`, `assembly-descriptor`, `method-permission`, `role-name`, `method`
+1.  `ejb-jar.xml`,  `@RolesAllowed`, `ejb-jar`, `assembly-descriptor`, `method-permission`, `role-name`, `method`
    , `ejb-name`, `method-name`,
-2. `@Named`, `@Default`, `@Any`
-3. `@Observes`, `Reception.IF_EXISTS`, `Reception.ALWAYS`
-4. `@Observes`, `Reception.BEFORE_COMPLETION`, `Reception.AFTER_COMPLETION`,  `Reception.AFTER_SUCCESS`
+2.  `@Named`, `@Default`, `@Any`
+3.  `@Observes`, `Reception.IF_EXISTS`, `Reception.ALWAYS`
+4.  `@Observes`, `Reception.BEFORE_COMPLETION`, `Reception.AFTER_COMPLETION`,  `Reception.AFTER_SUCCESS`
 
 #### Modules
 
-- [jee-app-3-3-wildfly](jee-app-3-3-wildfly)
+-   [jee-app-3-3-wildfly](jee-app-3-3-wildfly)
 
 ### [jee-app-3-4-wildfly](jee-app-3-4-wildfly) - History of The United Kingdom - 🇬🇧
 
 #### Subjects
 
-1. `<job`, `<step`, `<chunk`, `<end on`, `AbstractItemReader`, `AbstractItemWriter`, `ItemProcessor`, `@Named`
-2. `BatchRuntime`, `JobOperator`, `getRunningExecutions`, `getJobExecution`, `getBatchStatus`
-3. `@RequestScoped`, `@SessionScoped`, `@ApplicationScoped`
+1.  `<job`, `<step`, `<chunk`, `<end on`, `AbstractItemReader`, `AbstractItemWriter`, `ItemProcessor`, `@Named`
+2.  `BatchRuntime`, `JobOperator`, `getRunningExecutions`, `getJobExecution`, `getBatchStatus`
+3.  `@RequestScoped`, `@SessionScoped`, `@ApplicationScoped`
 
 #### Modules
 
-- [jee-app-3-4-wildfly](jee-app-3-4-wildfly)
+-   [jee-app-3-4-wildfly](jee-app-3-4-wildfly)
 
 ## References
 
 ### Online
 
-- [Glassfish server does not start. NullPointeException ](https://stackoverflow.com/questions/47458119/glassfish-server-does-not-start-nullpointeexception)
-- [Oracle 1Z0-900 Exam: Rise and Shine as an Application Developer with Oracle Certification](https://www.dbexam.com/blog/oracle-1z0-900-exam-rise-and-shine-application-developer-oracle-certification)
-- [1Z0-900: Java EE 7 Application Developer](https://www.dbexam.com/oracle/1z0-900-java-ee-7-application-developer)
-- [Building and Running a Java EE Application by Using Maven](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Maven_EE/MavenEE.html)
-- [Run Maven Java Web Application in Jetty Maven Plugin](https://o7planning.org/en/10335/run-maven-java-web-application-in-jetty-maven-plugin)
-- [Getting Started With Jetty Server](https://www.jrebel.com/blog/jetty-server)
-- [jetty Maven Jetty plugin](https://riptutorial.com/jetty/example/22209/maven-jetty-plugin)
-- [Chapter 6. Getting started with Weld](https://docs.jboss.org/weld/reference/3.0.0.CR1/en-US/html/gettingstarted.html)
-- [Creating a Chat Application using Java EE 7, Websockets and GlassFish 4](https://www.hascode.com/2013/08/creating-a-chat-application-using-java-ee-7-websockets-and-tomcat-4/)
-- [JAVA EE 7 – THE STANDARD FOR ENTERPRISE JAVA](https://turngeek.github.io/javaee7inaweek/chapter/i-1-java-ee-7-the-standard-for-enterprise-java/)
-- [Java Platform, Enterprise Edition (Java EE) 7](https://docs.oracle.com/javaee/7/index.html)
+-   [Glassfish server does not start. NullPointeException ](https://stackoverflow.com/questions/47458119/glassfish-server-does-not-start-nullpointeexception)
+-   [Oracle 1Z0-900 Exam: Rise and Shine as an Application Developer with Oracle Certification](https://www.dbexam.com/blog/oracle-1z0-900-exam-rise-and-shine-application-developer-oracle-certification)
+-   [1Z0-900: Java EE 7 Application Developer](https://www.dbexam.com/oracle/1z0-900-java-ee-7-application-developer)
+-   [Building and Running a Java EE Application by Using Maven](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Maven_EE/MavenEE.html)
+-   [Run Maven Java Web Application in Jetty Maven Plugin](https://o7planning.org/en/10335/run-maven-java-web-application-in-jetty-maven-plugin)
+-   [Getting Started With Jetty Server](https://www.jrebel.com/blog/jetty-server)
+-   [jetty Maven Jetty plugin](https://riptutorial.com/jetty/example/22209/maven-jetty-plugin)
+-   [Chapter 6.  Getting started with Weld](https://docs.jboss.org/weld/reference/3.0.0.CR1/en-US/html/gettingstarted.html)
+-   [Creating a Chat Application using Java EE 7, Websockets and GlassFish 4](https://www.hascode.com/2013/08/creating-a-chat-application-using-java-ee-7-websockets-and-tomcat-4/)
+-   [JAVA EE 7 – THE STANDARD FOR ENTERPRISE JAVA](https://turngeek.github.io/javaee7inaweek/chapter/i-1-java-ee-7-the-standard-for-enterprise-java/)
+-   [Java Platform, Enterprise Edition (Java EE) 7](https://docs.oracle.com/javaee/7/index.html)
 
 ### Books
 
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
 - Ćmil, M. (29th December 2014). <i>Java EE 7 Development with WildFly</i>. (First Edition). Packt Publishing
-- Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
-- Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
+-   Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
+-   Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
 
 ## About me 👨🏽‍💻🚀🏳️‍🌈
 

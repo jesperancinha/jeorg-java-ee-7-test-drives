@@ -10,15 +10,15 @@ The topics covered will be ther as well.
 
 Topics covered:
 
-1. `JSP`, `JSF`, `Servlet`, `Busines Components`, `Application`, `Applet`, `Decoder.Binary<Lyric2>`, `Decoder.Text<Lyric>`
-2. `@ServerEndpoint`, `@OnMessage`
-3. `authorization`, `authentication`, `PAM`
-4. `LoginContext`, `LoginModule`, `CodeSource`, `Configuration`, `Principal`, `Subject`
-5. `<c:out value="${requestScope['javax.servlet.error.exception']}"/>`, `exception`, `exception.getMessage()`
-6. `placeholder`, `passthrough`
-7. `<error-page>`, `<error-code>`
-8. `@Inject`, `setter`, `getter`, `member`
-9. `@CookieParam`, `@QueryParam`, `@PathParam`, `@MatrixParam`, `@HeaderParam`, `@FormParam`
+1.  `JSP`, `JSF`, `Servlet`, `Busines Components`, `Application`, `Applet`, `Decoder.Binary<Lyric2>`, `Decoder.Text<Lyric>`
+2.  `@ServerEndpoint`, `@OnMessage`
+3.  `authorization`, `authentication`, `PAM`
+4.  `LoginContext`, `LoginModule`, `CodeSource`, `Configuration`, `Principal`, `Subject`
+5.  `<c:out value="${requestScope['javax.servlet.error.exception']}"/>`, `exception`, `exception.getMessage()`
+6.  `placeholder`, `passthrough`
+7.  `<error-page>`, `<error-code>`
+8.  `@Inject`, `setter`, `getter`, `member`
+9.  `@CookieParam`, `@QueryParam`, `@PathParam`, `@MatrixParam`, `@HeaderParam`, `@FormParam`
 10. `@Stateless`, `@TransactionAttribute`, `@PersistenceContext`, `TransactionAttributeType.REQUIRED`, `EntityManager`
 11. `JTA`, `RESOURCE_LOCAL`, `@PersistenceContext`, `@SessionScoped`, `@PersistenceContext`, `@ApplicationException`
 12. `@IdClass`, `@Embeddable`, `@EmbeddableId`
@@ -37,17 +37,17 @@ Topics covered:
 
 ## To install
 
-1. Start Wildfly
-2. Run [installModules.sh](./installModules.sh)
-3. Stop Wildfly
-4. run [setup.sh](./setup.sh)
-5. Run wildfly with `-c standalone-full.xml`
-6. Start Wildfly
-7. Deploy app
+1.  Start Wildfly
+2.  Run [installModules.sh](./installModules.sh)
+3.  Stop Wildfly
+4.  run [setup.sh](./setup.sh)
+5.  Run wildfly with `-c standalone-full.xml`
+6.  Start Wildfly
+7.  Deploy app
 
 ## Extra notes
 
-1. We can use POJO's to implement a REST resource. The only requirement is for it top be annotated with at least one @Path
+1.  We can use POJO's to implement a REST resource. The only requirement is for it top be annotated with at least one @Path
 
 ## Create WAR file with the jar command
 
@@ -59,19 +59,19 @@ ls WEB-INF/lib
 
 ## Endpoints
 
-1. [http://localhost:8080/jeorg-jee-mastery-app-2-1.0.0-SNAPSHOT](http://localhost:8080/jeorg-jee-mastery-app-2-1.0.0-SNAPSHOT) / - Main Page
+1.  [http://localhost:8080/jeorg-jee-mastery-app-2-1.0.0-SNAPSHOT](http://localhost:8080/jeorg-jee-mastery-app-2-1.0.0-SNAPSHOT) / - Main Page
 
 ## Curl requests
 
 ## Context References
 
-- [Madonna: An Intimate Biography](https://en.wikipedia.org/wiki/Madonna:_An_Intimate_Biography)
-- [Royal Albert Hall](https://en.wikipedia.org/wiki/Royal_Albert_Hall)
-- [Faun Tour dates](https://faune.de/en/tour/)
-- [Luna (Faun album)](https://en.wikipedia.org/wiki/Luna_(Faun_album))
-- [This Mortal Coil](https://en.wikipedia.org/wiki/This_Mortal_Coil)
-- [Aria Wikipedia](https://en.wikipedia.org/wiki/Aria)
-- [Strophic form](https://en.wikipedia.org/wiki/Strophic_form)
+-   [Madonna: An Intimate Biography](https://en.wikipedia.org/wiki/Madonna:_An_Intimate_Biography)
+-   [Royal Albert Hall](https://en.wikipedia.org/wiki/Royal_Albert_Hall)
+-   [Faun Tour dates](https://faune.de/en/tour/)
+-   [Luna (Faun album)](https://en.wikipedia.org/wiki/Luna_(Faun_album))
+-   [This Mortal Coil](https://en.wikipedia.org/wiki/This_Mortal_Coil)
+-   [Aria Wikipedia](https://en.wikipedia.org/wiki/Aria)
+-   [Strophic form](https://en.wikipedia.org/wiki/Strophic_form)
 
 <div align="center">
       <a title="Marina - Handmade Heaven" href="https://www.youtube.com/watch?v=GiOGlYjKgX8">
@@ -165,110 +165,110 @@ ls WEB-INF/lib
 
 ### Online
 
-- [Teun-Hakvoort article about WebSockets for NLJUG - 2014/05 in Dutch](https://blogs.infosupport.com/wp-content/uploads/2014/05/Artikel-Websockets-en-Java-Teun-Hakvoort.pdf)
-- [Tackling RESOURCE_LOCAL Vs. JTA Under Java EE Umbrella and Payara Server](https://dzone.com/articles/resource-local-vs-jta-transaction-types-and-payara)
-- [JPA 101n](https://tomee.apache.org/jpa-concepts.html)
-- [Java EE HTML5 WebSockets Encoder and Decoder example](https://www.byteslounge.com/tutorials/java-ee-html5-websockets-encoder-and-decoder-example)
-- [42.2 Lock Modes](https://docs.oracle.com/javaee/7/tutorial/persistence-locking002.htm)
-- [Locking in JPA](https://www.objectdb.com/java/jpa/persistence/lock)
-- [How does LockModeType.OPTIMISTIC work in JPA and Hibernate](https://vladmihalcea.com/hibernate-locking-patterns-how-does-optimistic-lock-mode-work/)
-- [JSR 338: JavaTM Persistence API, Version 2.1](https://download.oracle.com/otn-pub/jcp/persistence-2_1-fr-eval-spec/JavaPersistence.pdf?AuthParam=1611180403_428ca418c9306d162b6b4194d54123fe)
-- [Difference between Shared Lock and Exclusive Lock](https://www.geeksforgeeks.org/difference-between-shared-lock-and-exclusive-lock/#:~:text=Exclusive%20Lock%20(X)%20%3A&text=Also%20called%20write%20lock.,one%20transaction%20at%20a%20time.)
-- [Optimistic vs. Pessimistic locking](https://stackoverflow.com/questions/129329/optimistic-vs-pessimistic-locking)
-- [What is isErrorPage attribute in JSP?](https://www.tutorialspoint.com/what-is-iserrorpage-attribute-in-jsp)
-- [Error Handler Servlet: how to get exception cause](https://stackoverflow.com/questions/4207586/error-handler-servlet-how-to-get-exception-cause)
-- [Optimistic locking and automatic retry](https://enterprisecraftsmanship.com/posts/optimistic-locking-automatic-retry/#:~:text=Pessimistic%20locking%20is%20when%20you,to%20proceed%20with%20the%20update.)
-- [Lock Modes](https://docs.oracle.com/javaee/6/tutorial/doc/gkjiu.html)
-- [Using the WebSocket API in a Web Application](https://netbeans.apache.org/kb/docs/javaee/maven-websocketapi.html#_sending_binary_data_to_the_endpoint)
-- [ServletConfig Interface](https://www.javatpoint.com/servletconfig)
-- [JSTL Format Tag fmt:setLocale Example](https://www.codejava.net/java-ee/jstl/jstl-format-tag-setlocale)
-- [JViews JSF applications globalization and multicultural support](https://help.perforce.com/visualization/jviews/8.10/jviews-charts810/doc/html/en-US/Content/Visualization/Documentation/JViews/JViews_Charts/_pubskel/ps_usrwebcharts476.html)
-- [Creating Durable Subscriptions](https://docs.oracle.com/cd/E19798-01/821-1841/bncgd/index.html#:~:text=To%20delete%20a%20durable%20subscription,unsubscribe(%22MySub%22)%3B)
-- [Interface JsonReader](https://docs.oracle.com/javaee/7/api/javax/json/JsonReader.html)
-- [How to use Message Selectors to filter messages](https://timjansen.github.io/jarfiller/guide/jms/selectors.xhtml)
-- [JPA issue in combo with @SessionScoped](http://tomee-openejb.979440.n4.nabble.com/JPA-issue-in-combo-with-SessionScoped-td4662268.html)
-- [JMSContext createContext(int sessionMode)](https://docs.oracle.com/javaee/7/api/javax/jms/ConnectionFactory.html#createContext-int-)
-- [JSTL - Core <c:forEach>, <c:forTokens> Tag](https://www.tutorialspoint.com/jsp/jstl_core_foreach_tag.htm)
-- [8.8. Transactional Stateful Session Beans](http://www.cs.ait.ac.th/~on/O/oreilly/java-ent/ebeans/ch08_08.htm)
-- [Transaction Annotations](http://tomee.apache.org/transaction-annotations.html)
-- [EJB - Transactions](https://www.tutorialspoint.com/ejb/ejb_transactions.htm)
-- [Programming WebLogic Enterprise JavaBeans](https://docs.oracle.com/cd/E13222_01/wls/docs103/ejb/index.html)
-- [CDI : WELD-001408 Unsatisfied dependencies, how to resolve it?](https://stackoverflow.com/questions/22191377/cdi-weld-001408-unsatisfied-dependencies-how-to-resolve-it)
-- [The Java EE 6 Tutorial using scopes](https://docs.oracle.com/javaee/6/tutorial/doc/gjbbk.html)
-- [JSR 352: Batch Applications for the Java Platform](https://jcp.org/en/jsr/detail?id=352)
-- [An Overview of Batch Processing in Java EE 7.0](https://www.oracle.com/technical-resources/articles/java/batch-processing-ee-7.html)
-- [CDI @RequestScoped](https://tomee.apache.org/examples-trunk/cdi-request-scope/)
-- [An Overview of CDI Events](https://dzone.com/articles/an-overview-of-cdi-events)
-- [Using Events in CDI Applications](https://docs.oracle.com/javaee/6/tutorial/doc/gkhic.html)
-- [Chapter 2. Concepts](https://docs.jboss.org/cdi/spec/1.0/html/concepts.html)
-- [Native CDI Qualifiers: @Any and @Default](https://abhirockzz.wordpress.com/2015/09/27/native-cdi-qualifiers-any-and-default/)
-- [The built-in qualifiers @Default and @Any](https://dzone.com/articles/built-qualifiers-default-and)
-- [JBoss - Chapter 3. Programming model](https://docs.jboss.org/cdi/spec/1.0/html/implementation.html)
-- [Annotation Type Inject](https://docs.oracle.com/javaee/6/api/javax/inject/Inject.html)
-- [Dependency Injection, Annotations, and why Java is Better Than you Think it is](https://www.objc.io/issues/11-android/dependency-injection-in-java/)
-- [Chapter 37. Partial Deployment Descriptors](https://docs.jboss.org/ejb3/docs/tutorial/1.0.7/html/Partial_deployment_descriptor.html)
-- [Deployment Descriptor Schema and Document Type Definitions Reference](https://docs.oracle.com/cd/E11035_01/wls100/ejb/DD_defs_reference.html)
-- [Java EE 7 Deployment Descriptors](https://antoniogoncalves.org/2013/06/04/java-ee-7-deployment-descriptors/)
-- [Fusion Middleware Developing Web Applications, Servlets, and JSPs for Oracle WebLogic Server](https://docs.oracle.com/cd/E24329_01/web.1211/e21049/web_xml.htm#WBAPP502)
-- [Database Authentication](https://docs.jboss.org/author/display/WFLY/Database%20Authentication%20Migration.html)
-- [Securing a web application](https://openliberty.io/guides/security-intro.html)
-- [Connect JDBC driver as Wildfly module](https://javadev.org/appservers/wildfly/8.2/jdbc/postgresql/)
-- [service-java-notificacoes](https://github.com/fas-alves/service-java-notificacoes)
-- [18.2. ROLE-BASED SECURITY IN APPLICATIONS](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html/development_guide/sect-role-based_security_in_applications)
-- [What Are Realms, Users, Groups, and Roles?](https://docs.oracle.com/javaee/6/tutorial/doc/bnbxj.html)
-- [Examples: Securing Enterprise Beans](https://javaee.github.io/tutorial/security-javaee003.html)
-- [WS-Security](https://en.wikipedia.org/wiki/WS-Security)
-- [JSTL - Core <fmt:message> Tag](https://www.tutorialspoint.com/jsp/jstl_format_message_tag.htm)
-- [JSTL - Core <fmt:bundle> Tag](https://www.tutorialspoint.com/jsp/jstl_format_bundle_tag.htm)
-- [JSP - Standard Tag Library (JSTL) Tutorial](https://www.tutorialspoint.com/jsp/jsp_standard_tag_library.htm)
-- [JSF 2 Templating with Facelets example](https://mkyong.com/jsf2/jsf-2-templating-with-facelets-example/)
-- [23.4 About CDI Managed Beans](https://docs.oracle.com/javaee/7/tutorial/cdi-basic004.htm)
-- [JSF Navigation Rule Example Tutorial](https://www.journaldev.com/7042/jsf-navigation-rule-example-tutorial)
-- [Caesar Cipher Encrypt & Decrypt](https://md5decrypt.net/en/Caesar/)
-- [18 Java API for WebSocket](http://www.devdoc.net/javaxe/JavaEE-7u2/docs/javaee-tutorial/doc/websocket.htm)
-- [WebSocket Client API in Java EE 7](https://dzone.com/articles/websocket-client-api-in-java-ee-7)
-- [Java EE 7: Building Web Applications with WebSocket, JavaScript and HTML5](oracle.com/webfolder/technetwork/tutorials/obe/java/HomeWebsocket/WebsocketHome.html#:~:text=By%20maintaining%20a%20constant%20connection,into%20Java%20EE%207%20applications.)
-- [Creating Custom JAX-RS MessageBodyReader](https://memorynotfound.com/jax-rs-messagebodyreader/)
-- [Creating Custom JAX-RS MessageBodyWriter](https://memorynotfound.com/jax-rs-messagebodywriter/)
-- [Chapter 4. RESTful Web Services](https://www.oreilly.com/library/view/java-ee-7/9781449370589/ch04.html)
-- [XMLHttpRequest.response](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/response)
-- [29.2 Creating a RESTful Root Resource Class](https://docs.oracle.com/javaee/7/tutorial/jaxrs002.htm)
-- [32.7 The Lifecycles of Enterprise Beans](https://docs.oracle.com/javaee/7/tutorial/ejb-intro007.htm)
-- [Annotation Type Path](https://docs.oracle.com/javaee/7/api/javax/ws/rs/Path.html)
-- [jsp:useBean action tag](https://www.javatpoint.com/jsp-useBean-action)
-- [How can I print error stack trace in JSP page?](https://stackoverflow.com/questions/8135980/how-can-i-print-error-stack-trace-in-jsp-page/8136065)
-- [Why is a JSP converted to Servlet?](https://stackoverflow.com/questions/42203449/why-is-a-jsp-converted-to-servlet)
-- [web.xml Deployment Descriptor Elements](https://docs.oracle.com/cd/E13222_01/wls/docs81/webapp/web_xml.html#1039330)
-- [Web.xml Filter Mapping in JSP Servlet with Example](https://www.guru99.com/jsp-filter.html)
-- [Define and Map Filters](https://help.perforce.com/hydraexpress/4.3.0/html/rwsfexpservletug/4-8.html#:~:text=The%20filter%20element%20of%20a,for%20this%20particular%20filter%20instance.)
-- [How do I define a filter using @WebFilter annotation?](https://kodejava.org/how-do-i-define-a-filter-using-webfilter-annotation/)
-- [URL Rewriting in WSDL and XML Schema](https://membrane-soa.org/service-proxy-doc/4.2/url-rewriting-wsdl.htm)
-- [Web Services Custom Resource (prior to V3.3)](https://hub.verj.io/ebase/doc/WebServicesCustomResource.htm#Session_Management)
-- [Auth0 REST vs SOAP - Building Modern Applications](https://auth0.com/learn/rest-vs-soap/)
-- [O'Reilly SOAP session scope](https://www.oreilly.com/library/view/apache-axis2-web/9781849511568/ch10s05.html)
-- [WebLogic Communications Services Gatekeeper Application Developer's Guide](https://docs.oracle.com/cd/E50778_01/doc.60/e50769/app_sessmgr.htm#SGAPP138)
-- [InterSystems SOAP Session Management](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GSOAP_SESSIONS)
-- [SOAP request from command line using curl](https://browse-tutorials.com/tutorial/soap-request-command-line-using-curl)
-- [Session Management in Java – HttpServlet, Cookies, URL Rewriting](https://www.journaldev.com/1907/java-session-management-servlet-httpsession-url-rewriting)
-- [URL Rewriting](https://www.javatpoint.com/url-rewriting-in-session-tracking)
-- [PublisherSubscriberTest.java](https://github.com/WASdev/sample.javaee7.jms/blob/master/src/main/java/com/ibm/ws/jms20/samples/PublisherSubscriberTest.java)
-- [Guaranteed Delivery using JMS Message Acknowledgement](https://jstobigdata.com/jms/guaranteed-delivery-using-jms-message-acknowledgement/)
-- [WildFly 9 - A JMS-oriented tutorial](https://gianlucacosta.info/blog/wildfly-jms-tutorial)
-- [Transaction management: EJB3 vs Spring](https://blog.frankel.ch/transaction-management-ejb3-vs-spring/)
-- [EJB passivation and activation example](https://www.javacodegeeks.com/2013/08/ejb-passivation-and-activation-example.html)
-- [@Resource injection target is invalid. Only setter methods are allowed](https://stackoverflow.com/questions/18019947/resource-injection-target-is-invalid-only-setter-methods-are-allowed)
-- [http://tomee.apache.org/testing-transactions-example.html](http://tomee.apache.org/testing-transactions-example.html)
+-   [Teun-Hakvoort article about WebSockets for NLJUG - 2014/05 in Dutch](https://blogs.infosupport.com/wp-content/uploads/2014/05/Artikel-Websockets-en-Java-Teun-Hakvoort.pdf)
+-   [Tackling RESOURCE_LOCAL Vs. JTA Under Java EE Umbrella and Payara Server](https://dzone.com/articles/resource-local-vs-jta-transaction-types-and-payara)
+-   [JPA 101n](https://tomee.apache.org/jpa-concepts.html)
+-   [Java EE HTML5 WebSockets Encoder and Decoder example](https://www.byteslounge.com/tutorials/java-ee-html5-websockets-encoder-and-decoder-example)
+-   [42.2 Lock Modes](https://docs.oracle.com/javaee/7/tutorial/persistence-locking002.htm)
+-   [Locking in JPA](https://www.objectdb.com/java/jpa/persistence/lock)
+-   [How does LockModeType.OPTIMISTIC work in JPA and Hibernate](https://vladmihalcea.com/hibernate-locking-patterns-how-does-optimistic-lock-mode-work/)
+-   [JSR 338: JavaTM Persistence API, Version 2.1](https://download.oracle.com/otn-pub/jcp/persistence-2_1-fr-eval-spec/JavaPersistence.pdf?AuthParam=1611180403_428ca418c9306d162b6b4194d54123fe)
+-   [Difference between Shared Lock and Exclusive Lock](https://www.geeksforgeeks.org/difference-between-shared-lock-and-exclusive-lock/#:~:text=Exclusive%20Lock%20(X)%20%3A&text=Also%20called%20write%20lock.,one%20transaction%20at%20a%20time.)
+-   [Optimistic vs. Pessimistic locking](https://stackoverflow.com/questions/129329/optimistic-vs-pessimistic-locking)
+-   [What is isErrorPage attribute in JSP?](https://www.tutorialspoint.com/what-is-iserrorpage-attribute-in-jsp)
+-   [Error Handler Servlet: how to get exception cause](https://stackoverflow.com/questions/4207586/error-handler-servlet-how-to-get-exception-cause)
+-   [Optimistic locking and automatic retry](https://enterprisecraftsmanship.com/posts/optimistic-locking-automatic-retry/#:~:text=Pessimistic%20locking%20is%20when%20you,to%20proceed%20with%20the%20update.)
+-   [Lock Modes](https://docs.oracle.com/javaee/6/tutorial/doc/gkjiu.html)
+-   [Using the WebSocket API in a Web Application](https://netbeans.apache.org/kb/docs/javaee/maven-websocketapi.html#_sending_binary_data_to_the_endpoint)
+-   [ServletConfig Interface](https://www.javatpoint.com/servletconfig)
+-   [JSTL Format Tag fmt:setLocale Example](https://www.codejava.net/java-ee/jstl/jstl-format-tag-setlocale)
+-   [JViews JSF applications globalization and multicultural support](https://help.perforce.com/visualization/jviews/8.10/jviews-charts810/doc/html/en-US/Content/Visualization/Documentation/JViews/JViews_Charts/_pubskel/ps_usrwebcharts476.html)
+-   [Creating Durable Subscriptions](https://docs.oracle.com/cd/E19798-01/821-1841/bncgd/index.html#:~:text=To%20delete%20a%20durable%20subscription,unsubscribe(%22MySub%22)%3B)
+-   [Interface JsonReader](https://docs.oracle.com/javaee/7/api/javax/json/JsonReader.html)
+-   [How to use Message Selectors to filter messages](https://timjansen.github.io/jarfiller/guide/jms/selectors.xhtml)
+-   [JPA issue in combo with @SessionScoped](http://tomee-openejb.979440.n4.nabble.com/JPA-issue-in-combo-with-SessionScoped-td4662268.html)
+-   [JMSContext createContext(int sessionMode)](https://docs.oracle.com/javaee/7/api/javax/jms/ConnectionFactory.html#createContext-int-)
+-   [JSTL - Core <c:forEach>, <c:forTokens> Tag](https://www.tutorialspoint.com/jsp/jstl_core_foreach_tag.htm)
+-   [8.8. Transactional Stateful Session Beans](http://www.cs.ait.ac.th/~on/O/oreilly/java-ent/ebeans/ch08_08.htm)
+-   [Transaction Annotations](http://tomee.apache.org/transaction-annotations.html)
+-   [EJB - Transactions](https://www.tutorialspoint.com/ejb/ejb_transactions.htm)
+-   [Programming WebLogic Enterprise JavaBeans](https://docs.oracle.com/cd/E13222_01/wls/docs103/ejb/index.html)
+-   [CDI : WELD-001408 Unsatisfied dependencies, how to resolve it?](https://stackoverflow.com/questions/22191377/cdi-weld-001408-unsatisfied-dependencies-how-to-resolve-it)
+-   [The Java EE 6 Tutorial using scopes](https://docs.oracle.com/javaee/6/tutorial/doc/gjbbk.html)
+-   [JSR 352: Batch Applications for the Java Platform](https://jcp.org/en/jsr/detail?id=352)
+-   [An Overview of Batch Processing in Java EE 7.0](https://www.oracle.com/technical-resources/articles/java/batch-processing-ee-7.html)
+-   [CDI @RequestScoped](https://tomee.apache.org/examples-trunk/cdi-request-scope/)
+-   [An Overview of CDI Events](https://dzone.com/articles/an-overview-of-cdi-events)
+-   [Using Events in CDI Applications](https://docs.oracle.com/javaee/6/tutorial/doc/gkhic.html)
+-   [Chapter 2.  Concepts](https://docs.jboss.org/cdi/spec/1.0/html/concepts.html)
+-   [Native CDI Qualifiers: @Any and @Default](https://abhirockzz.wordpress.com/2015/09/27/native-cdi-qualifiers-any-and-default/)
+-   [The built-in qualifiers @Default and @Any](https://dzone.com/articles/built-qualifiers-default-and)
+-   [JBoss - Chapter 3.  Programming model](https://docs.jboss.org/cdi/spec/1.0/html/implementation.html)
+-   [Annotation Type Inject](https://docs.oracle.com/javaee/6/api/javax/inject/Inject.html)
+-   [Dependency Injection, Annotations, and why Java is Better Than you Think it is](https://www.objc.io/issues/11-android/dependency-injection-in-java/)
+-   [Chapter 37. Partial Deployment Descriptors](https://docs.jboss.org/ejb3/docs/tutorial/1.0.7/html/Partial_deployment_descriptor.html)
+-   [Deployment Descriptor Schema and Document Type Definitions Reference](https://docs.oracle.com/cd/E11035_01/wls100/ejb/DD_defs_reference.html)
+-   [Java EE 7 Deployment Descriptors](https://antoniogoncalves.org/2013/06/04/java-ee-7-deployment-descriptors/)
+-   [Fusion Middleware Developing Web Applications, Servlets, and JSPs for Oracle WebLogic Server](https://docs.oracle.com/cd/E24329_01/web.1211/e21049/web_xml.htm#WBAPP502)
+-   [Database Authentication](https://docs.jboss.org/author/display/WFLY/Database%20Authentication%20Migration.html)
+-   [Securing a web application](https://openliberty.io/guides/security-intro.html)
+-   [Connect JDBC driver as Wildfly module](https://javadev.org/appservers/wildfly/8.2/jdbc/postgresql/)
+-   [service-java-notificacoes](https://github.com/fas-alves/service-java-notificacoes)
+-   [18.2. ROLE-BASED SECURITY IN APPLICATIONS](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/6.4/html/development_guide/sect-role-based_security_in_applications)
+-   [What Are Realms, Users, Groups, and Roles?](https://docs.oracle.com/javaee/6/tutorial/doc/bnbxj.html)
+-   [Examples: Securing Enterprise Beans](https://javaee.github.io/tutorial/security-javaee003.html)
+-   [WS-Security](https://en.wikipedia.org/wiki/WS-Security)
+-   [JSTL - Core <fmt:message> Tag](https://www.tutorialspoint.com/jsp/jstl_format_message_tag.htm)
+-   [JSTL - Core <fmt:bundle> Tag](https://www.tutorialspoint.com/jsp/jstl_format_bundle_tag.htm)
+-   [JSP - Standard Tag Library (JSTL) Tutorial](https://www.tutorialspoint.com/jsp/jsp_standard_tag_library.htm)
+-   [JSF 2 Templating with Facelets example](https://mkyong.com/jsf2/jsf-2-templating-with-facelets-example/)
+-   [23.4 About CDI Managed Beans](https://docs.oracle.com/javaee/7/tutorial/cdi-basic004.htm)
+-   [JSF Navigation Rule Example Tutorial](https://www.journaldev.com/7042/jsf-navigation-rule-example-tutorial)
+-   [Caesar Cipher Encrypt & Decrypt](https://md5decrypt.net/en/Caesar/)
+-   [18 Java API for WebSocket](http://www.devdoc.net/javaxe/JavaEE-7u2/docs/javaee-tutorial/doc/websocket.htm)
+-   [WebSocket Client API in Java EE 7](https://dzone.com/articles/websocket-client-api-in-java-ee-7)
+-   [Java EE 7: Building Web Applications with WebSocket, JavaScript and HTML5](oracle.com/webfolder/technetwork/tutorials/obe/java/HomeWebsocket/WebsocketHome.html#:~:text=By%20maintaining%20a%20constant%20connection,into%20Java%20EE%207%20applications.)
+-   [Creating Custom JAX-RS MessageBodyReader](https://memorynotfound.com/jax-rs-messagebodyreader/)
+-   [Creating Custom JAX-RS MessageBodyWriter](https://memorynotfound.com/jax-rs-messagebodywriter/)
+-   [Chapter 4.  RESTful Web Services](https://www.oreilly.com/library/view/java-ee-7/9781449370589/ch04.html)
+-   [XMLHttpRequest.response](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/response)
+-   [29.2 Creating a RESTful Root Resource Class](https://docs.oracle.com/javaee/7/tutorial/jaxrs002.htm)
+-   [32.7 The Lifecycles of Enterprise Beans](https://docs.oracle.com/javaee/7/tutorial/ejb-intro007.htm)
+-   [Annotation Type Path](https://docs.oracle.com/javaee/7/api/javax/ws/rs/Path.html)
+-   [jsp:useBean action tag](https://www.javatpoint.com/jsp-useBean-action)
+-   [How can I print error stack trace in JSP page?](https://stackoverflow.com/questions/8135980/how-can-i-print-error-stack-trace-in-jsp-page/8136065)
+-   [Why is a JSP converted to Servlet?](https://stackoverflow.com/questions/42203449/why-is-a-jsp-converted-to-servlet)
+-   [web.xml Deployment Descriptor Elements](https://docs.oracle.com/cd/E13222_01/wls/docs81/webapp/web_xml.html#1039330)
+-   [Web.xml Filter Mapping in JSP Servlet with Example](https://www.guru99.com/jsp-filter.html)
+-   [Define and Map Filters](https://help.perforce.com/hydraexpress/4.3.0/html/rwsfexpservletug/4-8.html#:~:text=The%20filter%20element%20of%20a,for%20this%20particular%20filter%20instance.)
+-   [How do I define a filter using @WebFilter annotation?](https://kodejava.org/how-do-i-define-a-filter-using-webfilter-annotation/)
+-   [URL Rewriting in WSDL and XML Schema](https://membrane-soa.org/service-proxy-doc/4.2/url-rewriting-wsdl.htm)
+-   [Web Services Custom Resource (prior to V3.3)](https://hub.verj.io/ebase/doc/WebServicesCustomResource.htm#Session_Management)
+-   [Auth0 REST vs SOAP - Building Modern Applications](https://auth0.com/learn/rest-vs-soap/)
+-   [O'Reilly SOAP session scope](https://www.oreilly.com/library/view/apache-axis2-web/9781849511568/ch10s05.html)
+-   [WebLogic Communications Services Gatekeeper Application Developer's Guide](https://docs.oracle.com/cd/E50778_01/doc.60/e50769/app_sessmgr.htm#SGAPP138)
+-   [InterSystems SOAP Session Management](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GSOAP_SESSIONS)
+-   [SOAP request from command line using curl](https://browse-tutorials.com/tutorial/soap-request-command-line-using-curl)
+-   [Session Management in Java – HttpServlet, Cookies, URL Rewriting](https://www.journaldev.com/1907/java-session-management-servlet-httpsession-url-rewriting)
+-   [URL Rewriting](https://www.javatpoint.com/url-rewriting-in-session-tracking)
+-   [PublisherSubscriberTest.java](https://github.com/WASdev/sample.javaee7.jms/blob/master/src/main/java/com/ibm/ws/jms20/samples/PublisherSubscriberTest.java)
+-   [Guaranteed Delivery using JMS Message Acknowledgement](https://jstobigdata.com/jms/guaranteed-delivery-using-jms-message-acknowledgement/)
+-   [WildFly 9 - A JMS-oriented tutorial](https://gianlucacosta.info/blog/wildfly-jms-tutorial)
+-   [Transaction management: EJB3 vs Spring](https://blog.frankel.ch/transaction-management-ejb3-vs-spring/)
+-   [EJB passivation and activation example](https://www.javacodegeeks.com/2013/08/ejb-passivation-and-activation-example.html)
+-   [@Resource injection target is invalid. Only setter methods are allowed](https://stackoverflow.com/questions/18019947/resource-injection-target-is-invalid-only-setter-methods-are-allowed)
+-   [http://tomee.apache.org/testing-transactions-example.html](http://tomee.apache.org/testing-transactions-example.html)
 
 ### Books
 
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
 - Ćmil, M. (29th December 2014). <i>Java EE 7 Development with WildFly</i>. (First Edition). Packt Publishing
-- Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
-- Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
-- R. Allen, P. J. Bambara, J. (2014). <i>OCM Java EE 6 Enterprise Architect Exam Guide</i>. (First Edition). McGraw-Hill
-- Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
-- Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
+-   Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
+-   Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
+-   R. Allen, P. J. Bambara, J. (2014). <i>OCM Java EE 6 Enterprise Architect Exam Guide</i>. (First Edition). McGraw-Hill
+-   Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
+-   Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
 
 ## About me 👨🏽‍💻🚀🏳️‍🌈
 

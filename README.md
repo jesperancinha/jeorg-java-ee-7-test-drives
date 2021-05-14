@@ -7,7 +7,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/89cc4b270cda4a448ce4fa895b30ec55)](https://www.codacy.com/manual/jofisaes/jeorg-java-ee-7-test-drives?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jesperancinha/jeorg-java-ee-7-test-drives&amp;utm_campaign=Badge_Grade)
 [![codebeat badge](https://codebeat.co/badges/70235530-f5e9-4254-a0d1-9dc7950c12cc)](https://codebeat.co/projects/github-com-jesperancinha-jeorg-java-ee-7-test-drives-master)
 [![CircleCI](https://circleci.com/gh/jesperancinha/jeorg-java-ee-7-test-drives.svg?style=svg)](https://circleci.com/gh/jesperancinha/jeorg-java-ee-7-test-drives)
-[![Build Status](https://travis-ci.org/jesperancinha/jeorg-java-ee-7-test-drives.svg?branch=main)](https://travis-ci.org/jesperancinha/jeorg-java-ee-7-test-drives)
+[![Build Status](https://travis-ci.com/jesperancinha/jeorg-java-ee-7-test-drives.svg?branch=main)](https://travis-ci.com/jesperancinha/jeorg-java-ee-7-test-drives)
 [![BCH compliance](https://bettercodehub.com/edge/badge/jesperancinha/jeorg-java-ee-7-test-drives?branch=master)](https://bettercodehub.com/)
 [![Build status](https://ci.appveyor.com/api/projects/status/eka55ffpbjkxq55p?svg=true)](https://ci.appveyor.com/project/jesperancinha/jeorg-java-ee-7-test-drives)
 [![Known Vulnerabilities](https://snyk.io/test/github/jesperancinha/jeorg-java-ee-7-test-drives/badge.svg)](https://snyk.io/test/github/jesperancinha/jeorg-java-ee-7-test-drives)
@@ -36,7 +36,7 @@
 
 This is a set of study modules that I'm using to study JEE7.
 
-- [JEE Applications](jeorg-jee-apps) - ⚙️ A set of applications written in JEE using different servers like Glassfish and WebLogic
+-   [JEE Applications](jeorg-jee-apps) - ⚙️ A set of applications written in JEE using different servers like Glassfish and WebLogic
     - [jeorg-jee-apps-triad-1](jeorg-jee-apps/jeorg-jee-apps-triad-1) - Triad 1
         - [jeorg-jee-app-1-wildfly](jeorg-jee-apps/jeorg-jee-apps-triad-1/jeorg-jee-app-1-wildfly) - 🎤 Pop stars list, music, lyrics and history - Java 8
         - [jeorg-jee-app-2-wildfly](jeorg-jee-apps/jeorg-jee-apps-triad-1/jeorg-jee-app-2-wildfly) - 🌿 Kitchen Herbs and History - Java 11
@@ -50,10 +50,10 @@ This is a set of study modules that I'm using to study JEE7.
         - [jee-app-3-2-wildfly](jeorg-jee-apps/jeorg-jee-apps-quad-1/jeorg-jee-app-3-2-wildfly) - 🇪🇸 History of Spain - Java 11
         - [jee-app-3-3-wildfly](jeorg-jee-apps/jeorg-jee-apps-quad-1/jeorg-jee-app-3-3-wildfly) - 🇳🇱 History of The Netherlands - Java 11
         - [jee-app-3-4-wildfly](jeorg-jee-apps/jeorg-jee-apps-quad-1/jeorg-jee-app-3-4-wildfly) - 🇬🇧 History of the United Kingdom - Java 11
-- [JEE Mastery Applications](jeorg-jee-mastery) - ⚔️ A set of modules with a very deep in-depth approach to architecture
+-   [JEE Mastery Applications](jeorg-jee-mastery) - ⚔️ A set of modules with a very deep in-depth approach to architecture
     - [jee-mastery-app-1](jeorg-jee-mastery/jeorg-jee-mastery-app-1) - 🏳️‍🌈 - PRIDE Edition 1
     - [jee-mastery-app-2](jeorg-jee-mastery/jeorg-jee-mastery-app-2) - 🎶 🔉 - Chorus and Arias
-- [JEE Lightning](jeorg-jee-lightning) - ⚡️ Fast track easy to deploy modules
+-   [JEE Lightning](jeorg-jee-lightning) - ⚡️ Fast track easy to deploy modules
     - [jee-lightning-1](jeorg-jee-lightning/jeorg-jee-lightning-1) - ☕️ No web.xml
     - [jee-lightning-2](jeorg-jee-lightning/jeorg-jee-lightning-2) - 🧼 SOAP bare minimal
     - [jee-lightning-3](jeorg-jee-lightning/jeorg-jee-lightning-3) - ☕️ JSP exercises
@@ -79,23 +79,23 @@ framework to be used.
 
 In general modules have a few bash scripts and if they have all of them, then this is the list of TODO's before starting wildfly, assuming you have it already installed in [jee-apps/wildfly-16.0.0.Final](./jeorg-jee-apps/wildfly-16.0.0.Final):
 
-1. Start Wildfly
-2. Run `installModules.sh`
-3. Stop Wildfly
-4. run `setup.sh`
-5. Run wildfly with `-c standalone-full.xml`
-6. Start Wildfly
-7. Deploy app
+1.  Start Wildfly
+2.  Run `installModules.sh`
+3.  Stop Wildfly
+4.  run `setup.sh`
+5.  Run wildfly with `-c standalone-full.xml`
+6.  Start Wildfly
+7.  Deploy app
 
 # Important Specs
 
-1. Java API for WebSocket 1.1
-2. JavaServer Faces (JSF) 2.2
-3. JavaServer Pages (JSP) 2.3
-4. Java API for RESTful Services (JAX-RS) 2.0
-5. Java API for JSON Processing (JSON-P) 1.0
-6. Expression Language (EL) 3.0
-7. Java Authentication Service Provider Interface for Containers (JASPIC) 1.1
+1.  Java API for WebSocket 1.1
+2.  JavaServer Faces (JSF) 2.2
+3.  JavaServer Pages (JSP) 2.3
+4.  Java API for RESTful Services (JAX-RS) 2.0
+5.  Java API for JSON Processing (JSON-P) 1.0
+6.  Expression Language (EL) 3.0
+7.  Java Authentication Service Provider Interface for Containers (JASPIC) 1.1
 
 <b style="color: green">Apache Tomcat 9.0.41 and Wildfly 16.0 seem to follow these standards. This is why I am using them.</b>
 
@@ -120,14 +120,14 @@ sdk use java 11.0.9.hs-adpt
 
 ### Books
 
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
 - Ćmil, M. (29th December 2014). <i>Java EE 7 Development with WildFly</i>. (First Edition). Packt Publishing
-- Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
-- Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
-- R. Allen, P. J. Bambara, J. (2014). <i>OCM Java EE 6 Enterprise Architect Exam Guide</i>. (First Edition). McGraw-Hill
-- Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
-- Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
+-   Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
+-   Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
+-   R. Allen, P. J. Bambara, J. (2014). <i>OCM Java EE 6 Enterprise Architect Exam Guide</i>. (First Edition). McGraw-Hill
+-   Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
+-   Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
 
 ---
 

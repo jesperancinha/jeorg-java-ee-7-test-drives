@@ -4,27 +4,27 @@
 
 ### Online
 
-- [28.1 Creating a Simple Web Service and Clients with JAX-WS](https://docs.oracle.com/javaee/7/tutorial/jaxws001.htm)
-- [JAX-WS Hello World Example – RPC Style](https://examples.javacodegeeks.com/enterprise-java/jws/jax-ws-hello-world-example-rpc-style/)
-- [Hello World JAX-RS Application](https://www.journaldev.com/9191/java-web-services-tutorial)
-- [Create a Java Web Service (SOAP RPC) for WildFly](https://www.learn-it-with-examples.com/development/java/java-web-services/create-simple-java-web-service-soap-rpc-web-app.html)
+-   [28.1 Creating a Simple Web Service and Clients with JAX-WS](https://docs.oracle.com/javaee/7/tutorial/jaxws001.htm)
+-   [JAX-WS Hello World Example – RPC Style](https://examples.javacodegeeks.com/enterprise-java/jws/jax-ws-hello-world-example-rpc-style/)
+-   [Hello World JAX-RS Application](https://www.journaldev.com/9191/java-web-services-tutorial)
+-   [Create a Java Web Service (SOAP RPC) for WildFly](https://www.learn-it-with-examples.com/development/java/java-web-services/create-simple-java-web-service-soap-rpc-web-app.html)
 
 ### Books
 
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
 - Ćmil, M. (29th December 2014). <i>Java EE 7 Development with WildFly</i>. (First Edition). Packt Publishing
-- Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
-- Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
-- R. Allen, P. J. Bambara, J. (2014). <i>OCM Java EE 6 Enterprise Architect Exam Guide</i>. (First Edition). McGraw-Hill
-- Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
-- Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
+-   Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
+-   Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
+-   R. Allen, P. J. Bambara, J. (2014). <i>OCM Java EE 6 Enterprise Architect Exam Guide</i>. (First Edition). McGraw-Hill
+-   Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
+-   Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
 
 ## Running
 
 After deployment you can test the WSDL here:
 
-- http://localhost:8080/jeorg-jee-app-2-wildfly-ws-1.0-SNAPSHOT/kitchen-herbs?wsdl
+-   http://localhost:8080/jeorg-jee-app-2-wildfly-ws-1.0-SNAPSHOT/kitchen-herbs?wsdl
 
 ## Errors Reported While  Deploying
 

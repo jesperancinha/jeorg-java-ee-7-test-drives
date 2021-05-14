@@ -19,21 +19,21 @@
 
 The apps under [jee-apps](../..), cover lots of topics. For this app we cover:
 
-1. `@XmlRootElement(name = "herb")` and `@XmlAccessorType(XmlAccessType.FIELD)`
-2. `@Path`, `@RequestScoped`, `@POST`, `@GET`, `@Produces`, `@Consumes` and `MediaType.APPLICATION_XML`
-3. `ServletContext`, `HttpSession` and `doGet`
-4. A very complicated JCA example, that doesn't work. Only `JNDI` works - Follow-up modules may provide solution to this.
-5. `javax.ejb.MessageDriven`, `@ActivationConfigProperty` and `javax.jms.MessageListener`.
-6. ApacheMQ, queues and [standalone-full.xml](backup/standalone-full.xml) configuration
-7. Much about `@WebServiceRef`
-8. `@WebServlet`, `@WebServiceRef`, `@HandlerChain`, `@WebServiceClient`, SOAP WS - JAX-WS
+1.  `@XmlRootElement(name = "herb")` and `@XmlAccessorType(XmlAccessType.FIELD)`
+2.  `@Path`, `@RequestScoped`, `@POST`, `@GET`, `@Produces`, `@Consumes` and `MediaType.APPLICATION_XML`
+3.  `ServletContext`, `HttpSession` and `doGet`
+4.  A very complicated JCA example, that doesn't work. Only `JNDI` works - Follow-up modules may provide solution to this.
+5.  `javax.ejb.MessageDriven`, `@ActivationConfigProperty` and `javax.jms.MessageListener`.
+6.  ApacheMQ, queues and [standalone-full.xml](backup/standalone-full.xml) configuration
+7.  Much about `@WebServiceRef`
+8.  `@WebServlet`, `@WebServiceRef`, `@HandlerChain`, `@WebServiceClient`, SOAP WS - JAX-WS
 
 In this web application it is important to understand the basics of these:
 
-1. The differences between using [JAXB](https://docs.oracle.com/javase/tutorial/jaxb/intro/index.html)
+1.  The differences between using [JAXB](https://docs.oracle.com/javase/tutorial/jaxb/intro/index.html)
    and [JAX-WS](https://docs.oracle.com/javaee/7/tutorial/jaxws.htm)
-2. JCA - [Java Connector Architecture](https://github.com/fmarchioni/mastertheboss/tree/master/jca-demo)
-3. JMS - Java Message Service
+2.  JCA - [Java Connector Architecture](https://github.com/fmarchioni/mastertheboss/tree/master/jca-demo)
+3.  JMS - Java Message Service
 
 This application offers you a fun overview in a very basic way about Resources, Controllers, Managed Beans, Data Access Objects, Services, Producers and Observers
 
@@ -193,11 +193,11 @@ The important nodes to bear in mind are the whole `resource-adapters` node, `jms
 
 After the service is running and deployed you should be able to see pages and JSON's in these addresses:
 
-1. http://localhost:8080/jeorg-jee-app-2-wildfly/app/herbs/parsley
-2. http://localhost:8080/jeorg-jee-app-2-wildfly/herbs/prices
-3. http://localhost:8080/jeorg-jee-app-2-wildfly/herbs/prices2
-4. http://localhost:8080/jeorg-jee-app-2-wildfly/app/herbs/connection
-5. http://localhost:8080/jeorg-jee-app-2-wildfly/jms
+1.  http://localhost:8080/jeorg-jee-app-2-wildfly/app/herbs/parsley
+2.  http://localhost:8080/jeorg-jee-app-2-wildfly/herbs/prices
+3.  http://localhost:8080/jeorg-jee-app-2-wildfly/herbs/prices2
+4.  http://localhost:8080/jeorg-jee-app-2-wildfly/app/herbs/connection
+5.  http://localhost:8080/jeorg-jee-app-2-wildfly/jms
 
 > NOTE: For point 4, there is a JCA running on this set of examples.
 > The problem is that it does not work because classes aren't being shared via the RAR module
@@ -253,44 +253,44 @@ Use Arquillian Managed, and you should get a screen like this. All options shoul
 
 ### Online
 
-- [What's in a name? What developers can expect in Jakarta EE 9](https://www.theserverside.com/feature/Whats-in-a-name-What-developers-can-expect-in-Jakarta-EE-9)
-- [@WebService handlers with @HandlerChain](https://tomee.apache.org/examples-trunk/webservice-handlerchain/)
-- [Maven - Generate Jar and War](https://stackoverflow.com/questions/10862980/maven-generate-jar-and-war)
-- [How to use @Resource WebServiceContext injection with Spring's @Transactional](https://stackoverflow.com/questions/5820969/how-to-use-resource-webservicecontext-injection-with-springs-transactional)
-- [28.1 Creating a Simple Web Service and Clients with JAX-WS](https://docs.oracle.com/javaee/7/tutorial/jaxws001.htm)
-- [Create a web service with maven](https://tuttlem.github.io/2015/12/05/create-a-web-service-with-maven.html)
-- [When will I ever need to use @WebServiceRef?](https://stackoverflow.com/questions/15661262/when-will-i-ever-need-to-use-webserviceref)
-- [while starting wildfly 10.1 to work with artemis, jboss.ra.activemq-ra is not installed error persists](https://stackoverflow.com/questions/43179283/while-starting-wildfly-10-1-to-work-with-artemis-jboss-ra-activemq-ra-is-not-in)
-- [WildFly Integration with apache activemq](https://javadev.org/docs/appserv/wildfly/8.2/active-mq/wildfly-activemq-integration-as-application/)
-- [CHAPTER 15. JAVA CONNECTOR ARCHITECTURE (JCA) MANAGEMENT](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html/configuration_guide/jca_management)
-- [WildFly 9 - A JMS-oriented tutorial](https://gianlucacosta.info/blog/wildfly-jms-tutorial)
-- [dlmiles / full-example-ee7-jca-eis](https://github.com/dlmiles/full-example-ee7-jca-eis)
-- [Deployment Descriptors used In WildFly](https://docs.jboss.org/author/display/WFLY8/Deployment%20Descriptors%20used%20In%20WildFly.html)
-- [JCA Master The Boss - GitHub Demo](https://github.com/fmarchioni/mastertheboss/tree/master/jca-demo)
-- [JCA IronJacamar](http://www.ironjacamar.org/)
-- [JCA Connector](http://www.mastertheboss.com/jboss-frameworks/ironjacamar/create-your-first-jca-connector-tutorial#:~:text=The%20Java%20Connector%20Architecture%20(JCA,)%2C%20database%20and%20messaging%20systems.)
-- [JAXB @XmlRootElement annotation example](https://howtodoinjava.com/jaxb/xmlrootelement-annotation/)
-- [JAX-WS JEE 7](https://docs.oracle.com/javaee/7/tutorial/jaxws.htm)
-- [JAXB JEE 5](https://docs.oracle.com/javaee/5/tutorial/doc/bnbay.html)
-- [JAXB](https://docs.oracle.com/javase/tutorial/jaxb/intro/index.html)
-- [JAXP](https://docs.oracle.com/javase/tutorial/jaxp/intro/index.html)
-- [StAX](https://docs.oracle.com/javase/tutorial/jaxp/stax/index.html)
-- [CDI @RequestScoped](https://openejb.apache.org/examples-trunk/cdi-request-scope/)
-- [Wildfly - Quickstart repo](https://github.com/wildfly/quickstart)
-- [Getting Started Developing Applications Guide - WildFly team Version 20.0.0.Final, 2020-06-05T20:49:23Z](https://docs.wildfly.org/20/Getting_Started_Developing_Applications_Guide.html)
-- [DEVELOPING EJB APPLICATIONS](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.2/html-single/developing_ejb_applications/index)
-- [Wild Fly Downloads](https://www.wildfly.org/downloads/)
+-   [What's in a name? What developers can expect in Jakarta EE 9](https://www.theserverside.com/feature/Whats-in-a-name-What-developers-can-expect-in-Jakarta-EE-9)
+-   [@WebService handlers with @HandlerChain](https://tomee.apache.org/examples-trunk/webservice-handlerchain/)
+-   [Maven - Generate Jar and War](https://stackoverflow.com/questions/10862980/maven-generate-jar-and-war)
+-   [How to use @Resource WebServiceContext injection with Spring's @Transactional](https://stackoverflow.com/questions/5820969/how-to-use-resource-webservicecontext-injection-with-springs-transactional)
+-   [28.1 Creating a Simple Web Service and Clients with JAX-WS](https://docs.oracle.com/javaee/7/tutorial/jaxws001.htm)
+-   [Create a web service with maven](https://tuttlem.github.io/2015/12/05/create-a-web-service-with-maven.html)
+-   [When will I ever need to use @WebServiceRef?](https://stackoverflow.com/questions/15661262/when-will-i-ever-need-to-use-webserviceref)
+-   [while starting wildfly 10.1 to work with artemis, jboss.ra.activemq-ra is not installed error persists](https://stackoverflow.com/questions/43179283/while-starting-wildfly-10-1-to-work-with-artemis-jboss-ra-activemq-ra-is-not-in)
+-   [WildFly Integration with apache activemq](https://javadev.org/docs/appserv/wildfly/8.2/active-mq/wildfly-activemq-integration-as-application/)
+-   [CHAPTER 15. JAVA CONNECTOR ARCHITECTURE (JCA) MANAGEMENT](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html/configuration_guide/jca_management)
+-   [WildFly 9 - A JMS-oriented tutorial](https://gianlucacosta.info/blog/wildfly-jms-tutorial)
+-   [dlmiles / full-example-ee7-jca-eis](https://github.com/dlmiles/full-example-ee7-jca-eis)
+-   [Deployment Descriptors used In WildFly](https://docs.jboss.org/author/display/WFLY8/Deployment%20Descriptors%20used%20In%20WildFly.html)
+-   [JCA Master The Boss - GitHub Demo](https://github.com/fmarchioni/mastertheboss/tree/master/jca-demo)
+-   [JCA IronJacamar](http://www.ironjacamar.org/)
+-   [JCA Connector](http://www.mastertheboss.com/jboss-frameworks/ironjacamar/create-your-first-jca-connector-tutorial#:~:text=The%20Java%20Connector%20Architecture%20(JCA,)%2C%20database%20and%20messaging%20systems.)
+-   [JAXB @XmlRootElement annotation example](https://howtodoinjava.com/jaxb/xmlrootelement-annotation/)
+-   [JAX-WS JEE 7](https://docs.oracle.com/javaee/7/tutorial/jaxws.htm)
+-   [JAXB JEE 5](https://docs.oracle.com/javaee/5/tutorial/doc/bnbay.html)
+-   [JAXB](https://docs.oracle.com/javase/tutorial/jaxb/intro/index.html)
+-   [JAXP](https://docs.oracle.com/javase/tutorial/jaxp/intro/index.html)
+-   [StAX](https://docs.oracle.com/javase/tutorial/jaxp/stax/index.html)
+-   [CDI @RequestScoped](https://openejb.apache.org/examples-trunk/cdi-request-scope/)
+-   [Wildfly - Quickstart repo](https://github.com/wildfly/quickstart)
+-   [Getting Started Developing Applications Guide - WildFly team Version 20.0.0.Final, 2020-06-05T20:49:23Z](https://docs.wildfly.org/20/Getting_Started_Developing_Applications_Guide.html)
+-   [DEVELOPING EJB APPLICATIONS](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.2/html-single/developing_ejb_applications/index)
+-   [Wild Fly Downloads](https://www.wildfly.org/downloads/)
 
 ### Books
 
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
 - Ćmil, M. (29th December 2014). <i>Java EE 7 Development with WildFly</i>. (First Edition). Packt Publishing
-- Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
-- Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
-- R. Allen, P. J. Bambara, J. (2014). <i>OCM Java EE 6 Enterprise Architect Exam Guide</i>. (First Edition). McGraw-Hill
-- Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
-- Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
+-   Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
+-   Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
+-   R. Allen, P. J. Bambara, J. (2014). <i>OCM Java EE 6 Enterprise Architect Exam Guide</i>. (First Edition). McGraw-Hill
+-   Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
+-   Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
 
 ## Context references
 

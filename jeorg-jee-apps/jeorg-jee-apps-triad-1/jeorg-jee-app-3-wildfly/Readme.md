@@ -15,15 +15,15 @@
 
 The apps under [jee-apps](../..), cover lots of topics. For this app we cover:
 
-1. `@Entity` and `@Table`
-2. `javax.ejb.TransactionManagementType.BEAN` vs `javax.ejb.TransactionManagementType.CONTAINER`
-3. `@OneToMany` and `@ManyToOne` (NOTE: They have to be either all member instances, either all member methods. mixed won't work)
-4. `@OneToOne` The same rule applies as in point 3.
-5. `@Enumerated` JPA entities
-6. Abstract and final JPA entities -> [Requirements for Entity Classes](https://docs.oracle.com/javaee/5/tutorial/doc/bnbqa.html)
-7. `@Stateful`, `@Cache`, `@PrePassivate`, `@PostActivate`, `Serializable`, `@Local`, `java:module`, `InitialContext`
-8. `transient`, `@OneToMany(fetch = FetchType.EAGER)`,  `@OneToMany(fetch = FetchType.LAZY)`
-9. `@Singleton`, `@Stateful`, `@Stateless,` `SessionContext`,  `@Timeout`, `@Resource`, `context.getTimerService()`
+1.  `@Entity` and `@Table`
+2.  `javax.ejb.TransactionManagementType.BEAN` vs `javax.ejb.TransactionManagementType.CONTAINER`
+3.  `@OneToMany` and `@ManyToOne` (NOTE: They have to be either all member instances, either all member methods. mixed won't work)
+4.  `@OneToOne` The same rule applies as in point 3.
+5.  `@Enumerated` JPA entities
+6.  Abstract and final JPA entities -> [Requirements for Entity Classes](https://docs.oracle.com/javaee/5/tutorial/doc/bnbqa.html)
+7.  `@Stateful`, `@Cache`, `@PrePassivate`, `@PostActivate`, `Serializable`, `@Local`, `java:module`, `InitialContext`
+8.  `transient`, `@OneToMany(fetch = FetchType.EAGER)`,  `@OneToMany(fetch = FetchType.LAZY)`
+9.  `@Singleton`, `@Stateful`, `@Stateless,` `SessionContext`,  `@Timeout`, `@Resource`, `context.getTimerService()`
    and `TimerService`
 10. `@TransactionAttribute` and `TransactionAttributeType`
 11. `MANDATORY`, `REQUIRED`, `REQUIRES_NEW`, `SUPPORTS`, `NOT_SUPPORTED`, `NEVER` TransactionAttribute
@@ -32,35 +32,35 @@ The apps under [jee-apps](../..), cover lots of topics. For this app we cover:
 
 ## Domains in detail
 
-- [Domain](src/main/java/org/jesperancinha/jtd/jee/teeth/domain) - `@OneToMany` and `@ManyToOne`
-- [Domain1](src/main/java/org/jesperancinha/jtd/jee/teeth/domain1) - TransactionManagementType.BEAN
-- [Domain2](src/main/java/org/jesperancinha/jtd/jee/teeth/domain2) - TransactionManagementType.CONTAINER
+-   [Domain](src/main/java/org/jesperancinha/jtd/jee/teeth/domain) - `@OneToMany` and `@ManyToOne`
+-   [Domain1](src/main/java/org/jesperancinha/jtd/jee/teeth/domain1) - TransactionManagementType.BEAN
+-   [Domain2](src/main/java/org/jesperancinha/jtd/jee/teeth/domain2) - TransactionManagementType.CONTAINER
 
 ## Test Endpoints
 
-1. [http://localhost:8080/jeorg-jee-app-3-wildfly/periodontitis](http://localhost:8080/jeorg-jee-app-3-wildfly/periodontitis) - Passivation Exercise
-2. [http://localhost:8080/jeorg-jee-app-3-wildfly/periodontitis?count=700&activate=1](http://localhost:8080/jeorg-jee-app-3-wildfly/periodontitis?count=700&activate=1) - Passivation Exercise
-3. [http://localhost:8080/jeorg-jee-app-3-wildfly/tooth/servlet/all](http://localhost:8080/jeorg-jee-app-3-wildfly/tooth/servlet/all) - Domain Data, use of EAGER and JSON generation from Entity
-4. [http://localhost:8080/jeorg-jee-app-3-wildfly/app/tooth/rest/all](http://localhost:8080/jeorg-jee-app-3-wildfly/app/tooth/rest/all) - Domain Data, use of EAGER and JSON generation from Entity
-5. http://localhost:8080/jeorg-jee-app-3-wildfly/timer/servlet/stateless - TimeService
-6. http://localhost:8080/jeorg-jee-app-3-wildfly/timer/servlet/stateful - TimeService
-7. http://localhost:8080/jeorg-jee-app-3-wildfly/timer/servlet/singleton - TimeService
-8. http://localhost:8080/jeorg-jee-app-3-wildfly/tooth/servlet/tx/all - Transaction type
+1.  [http://localhost:8080/jeorg-jee-app-3-wildfly/periodontitis](http://localhost:8080/jeorg-jee-app-3-wildfly/periodontitis) - Passivation Exercise
+2.  [http://localhost:8080/jeorg-jee-app-3-wildfly/periodontitis?count=700&activate=1](http://localhost:8080/jeorg-jee-app-3-wildfly/periodontitis?count=700&activate=1) - Passivation Exercise
+3.  [http://localhost:8080/jeorg-jee-app-3-wildfly/tooth/servlet/all](http://localhost:8080/jeorg-jee-app-3-wildfly/tooth/servlet/all) - Domain Data, use of EAGER and JSON generation from Entity
+4.  [http://localhost:8080/jeorg-jee-app-3-wildfly/app/tooth/rest/all](http://localhost:8080/jeorg-jee-app-3-wildfly/app/tooth/rest/all) - Domain Data, use of EAGER and JSON generation from Entity
+5.  http://localhost:8080/jeorg-jee-app-3-wildfly/timer/servlet/stateless - TimeService
+6.  http://localhost:8080/jeorg-jee-app-3-wildfly/timer/servlet/stateful - TimeService
+7.  http://localhost:8080/jeorg-jee-app-3-wildfly/timer/servlet/singleton - TimeService
+8.  http://localhost:8080/jeorg-jee-app-3-wildfly/tooth/servlet/tx/all - Transaction type
 
 ## How to run
 
-1. Stop your wildfly server
-2. Run setup.sh
-3. Start Wildfly with switch `-c standalone-full.xml`
+1.  Stop your wildfly server
+2.  Run setup.sh
+3.  Start Wildfly with switch `-c standalone-full.xml`
 
-## How to check your database in Intellj:
+## How to check your database in Intellj
 ![alt img](./docs/h2-database-config.png)
 
 Database connection properties:
 
-1. URL -> `jdbc:h2:file:~/records;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;AUTO_SERVER=TRUE`
-2. Username -> `sa`
-3. Password -> `sa`
+1.  URL -> `jdbc:h2:file:~/records;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;AUTO_SERVER=TRUE`
+2.  Username -> `sa`
+3.  Password -> `sa`
 
 > Path details must be absolut in IntelliJ versions up until 2020.3. At least, this is how I experienced it.
 
@@ -70,9 +70,9 @@ If you run the arquillian tests, very little changes:
 
 Database connection properties:
 
-1. URL -> `jdbc:h2:file:mem:records;AUTO_SERVER=TRUE`
-2. Username -> `sa`
-3. Password -> `sa`
+1.  URL -> `jdbc:h2:file:mem:records;AUTO_SERVER=TRUE`
+2.  Username -> `sa`
+3.  Password -> `sa`
 ## Run Arquillian tests
 
 Make sure port 9990 is available:
@@ -112,7 +112,7 @@ mvn clean install -Parq-wildfly-managed
 
 #### Passivation [configuration](http://www.mastertheboss.com/jboss-server/jboss-cluster/jboss-as-7-custom-caches-configuration)
 
-1. Caches
+1.  Caches
 
 ```xml
 
@@ -124,7 +124,7 @@ mvn clean install -Parq-wildfly-managed
 </caches>
 ```
 
-2. Passivation Stores
+2.  Passivation Stores
 
 ```xml
 
@@ -137,32 +137,32 @@ mvn clean install -Parq-wildfly-managed
 
 ## Context References
 
-- [Mandible by Wikipedia](https://en.wikipedia.org/wiki/Mandible)
-- [Tooth Decay](https://www.nidcr.nih.gov/health-info/tooth-decay/more-info#:~:text=Tooth%20decay%20(dental%20caries)%20is,a%20tooth%2C%20called%20a%20cavity.)
-- [Wisdom teeth](https://www.webmd.com/oral-health/wisdom-teeth#1)
-- [Wisdom tooh by Wikipedia](https://en.wikipedia.org/wiki/Wisdom_tooth)
-- [Trigeminal Nerve Overview](https://www.healthline.com/human-body-maps/trigeminal-nerve)
+-   [Mandible by Wikipedia](https://en.wikipedia.org/wiki/Mandible)
+-   [Tooth Decay](https://www.nidcr.nih.gov/health-info/tooth-decay/more-info#:~:text=Tooth%20decay%20(dental%20caries)%20is,a%20tooth%2C%20called%20a%20cavity.)
+-   [Wisdom teeth](https://www.webmd.com/oral-health/wisdom-teeth#1)
+-   [Wisdom tooh by Wikipedia](https://en.wikipedia.org/wiki/Wisdom_tooth)
+-   [Trigeminal Nerve Overview](https://www.healthline.com/human-body-maps/trigeminal-nerve)
 
 ## References
 
 ### Online
 
-- [WildFly custom caches configuration for Stateful Beans](http://www.mastertheboss.com/jboss-server/jboss-cluster/jboss-as-7-custom-caches-configuration)
-- [Transaction management: EJB3 vs Spring](https://blog.frankel.ch/transaction-management-ejb3-vs-spring/)
-- [EJB passivation and activation example](https://www.javacodegeeks.com/2013/08/ejb-passivation-and-activation-example.html)
-- [@Resource injection target is invalid. Only setter methods are allowed](https://stackoverflow.com/questions/18019947/resource-injection-target-is-invalid-only-setter-methods-are-allowed)
-- [http://tomee.apache.org/testing-transactions-example.html](http://tomee.apache.org/testing-transactions-example.html)
+-   [WildFly custom caches configuration for Stateful Beans](http://www.mastertheboss.com/jboss-server/jboss-cluster/jboss-as-7-custom-caches-configuration)
+-   [Transaction management: EJB3 vs Spring](https://blog.frankel.ch/transaction-management-ejb3-vs-spring/)
+-   [EJB passivation and activation example](https://www.javacodegeeks.com/2013/08/ejb-passivation-and-activation-example.html)
+-   [@Resource injection target is invalid. Only setter methods are allowed](https://stackoverflow.com/questions/18019947/resource-injection-target-is-invalid-only-setter-methods-are-allowed)
+-   [http://tomee.apache.org/testing-transactions-example.html](http://tomee.apache.org/testing-transactions-example.html)
 
 ### Books
 
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
 - Ćmil, M. (29th December 2014). <i>Java EE 7 Development with WildFly</i>. (First Edition). Packt Publishing
-- Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
-- Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
-- R. Allen, P. J. Bambara, J. (2014). <i>OCM Java EE 6 Enterprise Architect Exam Guide</i>. (First Edition). McGraw-Hill
-- Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
-- Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
+-   Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
+-   Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
+-   R. Allen, P. J. Bambara, J. (2014). <i>OCM Java EE 6 Enterprise Architect Exam Guide</i>. (First Edition). McGraw-Hill
+-   Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
+-   Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
 
 ## About me 👨🏽‍💻🚀🏳️‍🌈
 

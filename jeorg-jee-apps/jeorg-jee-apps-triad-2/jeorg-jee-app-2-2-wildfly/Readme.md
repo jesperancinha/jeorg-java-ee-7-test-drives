@@ -15,37 +15,37 @@
 
 The apps under [jee-apps](../..), cover lots of topics. For this app we cover:
 
-1. `URL Rewriting`, `Session`, `Cookie`
-2. `soapenv:Envelope`, `soapenv:Header`, `soapenv:Body`, ` @Resource`, `@WebService`, `endpointInterface`
+1.  `URL Rewriting`, `Session`, `Cookie`
+2.  `soapenv:Envelope`, `soapenv:Header`, `soapenv:Body`, ` @Resource`, `@WebService`, `endpointInterface`
    , `@SOAPBinding(style = SOAPBinding.Style.RPC)`
-3. `@CookieParam`, `JAX-WS`, `Cookie`, `WebServiceContext`
-4. `@WebParam`, `@WebResult`
-5. `Random Access`, `JAXB`, `Memory footprint`, `Multiple times processing`
-6. `@WebFilter`, `HttpSession`, `@SessionScoped`, `@Named`, `FilterChain`
-7. `Filter`, `web.xml`, `order`, `WebFilter`, `<filter>`, `<filter-mapping>`, `<filter-name>`, `<filter-class>`
+3.  `@CookieParam`, `JAX-WS`, `Cookie`, `WebServiceContext`
+4.  `@WebParam`, `@WebResult`
+5.  `Random Access`, `JAXB`, `Memory footprint`, `Multiple times processing`
+6.  `@WebFilter`, `HttpSession`, `@SessionScoped`, `@Named`, `FilterChain`
+7.  `Filter`, `web.xml`, `order`, `WebFilter`, `<filter>`, `<filter-mapping>`, `<filter-name>`, `<filter-class>`
    , `<init-param>`
-8. `<jsp:useBean`, `JSP`, `Servlet`, `HttpServlet`
-9. `Filter`, `web.xml`, `order`, `direct references`
+8.  `<jsp:useBean`, `JSP`, `Servlet`, `HttpServlet`
+9.  `Filter`, `web.xml`, `order`, `direct references`
 10. `Session`, `invalidate`, `IllegalStateException`
 
 ## Test Endpoints
 
-1. http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/
-2. http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/left?leftName=Viva - URL Rewriting Session Management
-3. http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/store_main.jsp - URL Rewriting, Http Session and Cookie Management
-4. http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/be-there - SOAP Session management (note that this is only pulling the HTTP session out.)
-5. http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/be-there?wsdl - SOAP Session management (note that this is only pulling the HTTP session out.)
-6. http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/app/cookie - Sending cookies via SOAP Session Management and JAX-WS (notice that it's WS and not RS.)
-7. http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/underground - @Webparam and @WebResult
-8. http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/underground?wsdl - @Webparam and @WebResult
-9. http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/app/registry - Random access and JAXB
+1.  http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/
+2.  http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/left?leftName=Viva - URL Rewriting Session Management
+3.  http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/store_main.jsp - URL Rewriting, Http Session and Cookie Management
+4.  http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/be-there - SOAP Session management (note that this is only pulling the HTTP session out.)
+5.  http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/be-there?wsdl - SOAP Session management (note that this is only pulling the HTTP session out.)
+6.  http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/app/cookie - Sending cookies via SOAP Session Management and JAX-WS (notice that it's WS and not RS.)
+7.  http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/underground - @Webparam and @WebResult
+8.  http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/underground?wsdl - @Webparam and @WebResult
+9.  http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/app/registry - Random access and JAXB
 10. http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/app/secure/lyrics/spice - @WebFilter studies
 11. http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/CaghtUpInTheMiddle - Filter, web.xml and order
 12. http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/love.jsp - JSP and Servlet
 13. http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/CaghtUpInTheMiddle2 - Filter, web.xml, order and direct references
 14. http://localhost:8080/jeorg-jee-app-2-2-wildfly-1.0.0-SNAPSHOT/spice - Session invalidation exercise
 
-- Note that URL rewriting can happen via SOAP by using proxies that change the port definition as in the example:
+-   Note that URL rewriting can happen via SOAP by using proxies that change the port definition as in the example:
 
 From this:
 
@@ -147,11 +147,11 @@ mvn clean install -Parq-wildfly-managed
 
 ## Context References
 
-- [Spice Up Your Life](https://en.wikipedia.org/wiki/Spice_Up_Your_Life)
-- [Eye Candy (album)](https://en.wikipedia.org/wiki/Eye_Candy_(album))
-- [Mis-Teeq](https://en.wikipedia.org/wiki/Mis-Teeq)
-- [Say you'll be there - Spice Girls by Wikipedia](https://en.wikipedia.org/wiki/Say_You%27ll_Be_There)
-- [Girls Aloud](https://en.wikipedia.org/wiki/Girls_Aloud)
+-   [Spice Up Your Life](https://en.wikipedia.org/wiki/Spice_Up_Your_Life)
+-   [Eye Candy (album)](https://en.wikipedia.org/wiki/Eye_Candy_(album))
+-   [Mis-Teeq](https://en.wikipedia.org/wiki/Mis-Teeq)
+-   [Say you'll be there - Spice Girls by Wikipedia](https://en.wikipedia.org/wiki/Say_You%27ll_Be_There)
+-   [Girls Aloud](https://en.wikipedia.org/wiki/Girls_Aloud)
 
 <div align="center">
       <a href="https://www.youtube.com/watch?v=V9Wv4SCBiTE">
@@ -182,38 +182,38 @@ mvn clean install -Parq-wildfly-managed
 
 ### Online
 
-- [Why is a JSP converted to Servlet?](https://stackoverflow.com/questions/42203449/why-is-a-jsp-converted-to-servlet)
-- [web.xml Deployment Descriptor Elements](https://docs.oracle.com/cd/E13222_01/wls/docs81/webapp/web_xml.html#1039330)
-- [Web.xml Filter Mapping in JSP Servlet with Example](https://www.guru99.com/jsp-filter.html)
-- [Define and Map Filters](https://help.perforce.com/hydraexpress/4.3.0/html/rwsfexpservletug/4-8.html#:~:text=The%20filter%20element%20of%20a,for%20this%20particular%20filter%20instance.)
-- [How do I define a filter using @WebFilter annotation?](https://kodejava.org/how-do-i-define-a-filter-using-webfilter-annotation/)
-- [URL Rewriting in WSDL and XML Schema](https://membrane-soa.org/service-proxy-doc/4.2/url-rewriting-wsdl.htm)
-- [Web Services Custom Resource (prior to V3.3)](https://hub.verj.io/ebase/doc/WebServicesCustomResource.htm#Session_Management)
-- [Auth0 REST vs SOAP - Building Modern Applications](https://auth0.com/learn/rest-vs-soap/)
-- [O'Reilly SOAP session scope](https://www.oreilly.com/library/view/apache-axis2-web/9781849511568/ch10s05.html)
-- [WebLogic Communications Services Gatekeeper Application Developer's Guide](https://docs.oracle.com/cd/E50778_01/doc.60/e50769/app_sessmgr.htm#SGAPP138)
-- [InterSystems SOAP Session Management](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GSOAP_SESSIONS)
-- [SOAP request from command line using curl](https://browse-tutorials.com/tutorial/soap-request-command-line-using-curl)
-- [Session Management in Java – HttpServlet, Cookies, URL Rewriting](https://www.journaldev.com/1907/java-session-management-servlet-httpsession-url-rewriting)
-- [URL Rewriting](https://www.javatpoint.com/url-rewriting-in-session-tracking)
-- [PublisherSubscriberTest.java](https://github.com/WASdev/sample.javaee7.jms/blob/master/src/main/java/com/ibm/ws/jms20/samples/PublisherSubscriberTest.java)
-- [Guaranteed Delivery using JMS Message Acknowledgement](https://jstobigdata.com/jms/guaranteed-delivery-using-jms-message-acknowledgement/)
-- [WildFly 9 - A JMS-oriented tutorial](https://gianlucacosta.info/blog/wildfly-jms-tutorial)
-- [Transaction management: EJB3 vs Spring](https://blog.frankel.ch/transaction-management-ejb3-vs-spring/)
-- [EJB passivation and activation example](https://www.javacodegeeks.com/2013/08/ejb-passivation-and-activation-example.html)
-- [@Resource injection target is invalid. Only setter methods are allowed](https://stackoverflow.com/questions/18019947/resource-injection-target-is-invalid-only-setter-methods-are-allowed)
-- [http://tomee.apache.org/testing-transactions-example.html](http://tomee.apache.org/testing-transactions-example.html)
+-   [Why is a JSP converted to Servlet?](https://stackoverflow.com/questions/42203449/why-is-a-jsp-converted-to-servlet)
+-   [web.xml Deployment Descriptor Elements](https://docs.oracle.com/cd/E13222_01/wls/docs81/webapp/web_xml.html#1039330)
+-   [Web.xml Filter Mapping in JSP Servlet with Example](https://www.guru99.com/jsp-filter.html)
+-   [Define and Map Filters](https://help.perforce.com/hydraexpress/4.3.0/html/rwsfexpservletug/4-8.html#:~:text=The%20filter%20element%20of%20a,for%20this%20particular%20filter%20instance.)
+-   [How do I define a filter using @WebFilter annotation?](https://kodejava.org/how-do-i-define-a-filter-using-webfilter-annotation/)
+-   [URL Rewriting in WSDL and XML Schema](https://membrane-soa.org/service-proxy-doc/4.2/url-rewriting-wsdl.htm)
+-   [Web Services Custom Resource (prior to V3.3)](https://hub.verj.io/ebase/doc/WebServicesCustomResource.htm#Session_Management)
+-   [Auth0 REST vs SOAP - Building Modern Applications](https://auth0.com/learn/rest-vs-soap/)
+-   [O'Reilly SOAP session scope](https://www.oreilly.com/library/view/apache-axis2-web/9781849511568/ch10s05.html)
+-   [WebLogic Communications Services Gatekeeper Application Developer's Guide](https://docs.oracle.com/cd/E50778_01/doc.60/e50769/app_sessmgr.htm#SGAPP138)
+-   [InterSystems SOAP Session Management](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GSOAP_SESSIONS)
+-   [SOAP request from command line using curl](https://browse-tutorials.com/tutorial/soap-request-command-line-using-curl)
+-   [Session Management in Java – HttpServlet, Cookies, URL Rewriting](https://www.journaldev.com/1907/java-session-management-servlet-httpsession-url-rewriting)
+-   [URL Rewriting](https://www.javatpoint.com/url-rewriting-in-session-tracking)
+-   [PublisherSubscriberTest.java](https://github.com/WASdev/sample.javaee7.jms/blob/master/src/main/java/com/ibm/ws/jms20/samples/PublisherSubscriberTest.java)
+-   [Guaranteed Delivery using JMS Message Acknowledgement](https://jstobigdata.com/jms/guaranteed-delivery-using-jms-message-acknowledgement/)
+-   [WildFly 9 - A JMS-oriented tutorial](https://gianlucacosta.info/blog/wildfly-jms-tutorial)
+-   [Transaction management: EJB3 vs Spring](https://blog.frankel.ch/transaction-management-ejb3-vs-spring/)
+-   [EJB passivation and activation example](https://www.javacodegeeks.com/2013/08/ejb-passivation-and-activation-example.html)
+-   [@Resource injection target is invalid. Only setter methods are allowed](https://stackoverflow.com/questions/18019947/resource-injection-target-is-invalid-only-setter-methods-are-allowed)
+-   [http://tomee.apache.org/testing-transactions-example.html](http://tomee.apache.org/testing-transactions-example.html)
 
 ### Books
 
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
 - Ćmil, M. (29th December 2014). <i>Java EE 7 Development with WildFly</i>. (First Edition). Packt Publishing
-- Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
-- Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
-- R. Allen, P. J. Bambara, J. (2014). <i>OCM Java EE 6 Enterprise Architect Exam Guide</i>. (First Edition). McGraw-Hill
-- Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
-- Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
+-   Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
+-   Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
+-   R. Allen, P. J. Bambara, J. (2014). <i>OCM Java EE 6 Enterprise Architect Exam Guide</i>. (First Edition). McGraw-Hill
+-   Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
+-   Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
 
 ## About me 👨🏽‍💻🚀🏳️‍🌈
 

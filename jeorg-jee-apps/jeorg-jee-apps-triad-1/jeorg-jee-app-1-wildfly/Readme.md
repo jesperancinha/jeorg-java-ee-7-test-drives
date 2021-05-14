@@ -15,15 +15,15 @@
 
 The apps under [jeorg-jee-apps](../..), cover lots of topics. For this app we cover:
 
-1. `Servlet` -> [17 Java Servlet Technology](https://docs.oracle.com/javaee/7/tutorial/servlets.htm)
-2. `@Target({ TYPE, METHOD, PARAMETER, FIELD })`, `@Retention(RUNTIME)`,`@Documented`,`@Qualifier`
-3. `@ApplicationScoped`
-4. JSF (Java Server Faces)
-5. `javax.enterprise.inject.Instance` - How to inject an instance and re-inject
-6. `@PersistenceContext`, `InjectionPoint` and `@RequestScoped`
-7. `@Stateful`, `@Alternative`
-8. `@Model`
-9. `<ui:repeat`, `<h:link` and `<f:param`
+1.  `Servlet` -> [17 Java Servlet Technology](https://docs.oracle.com/javaee/7/tutorial/servlets.htm)
+2.  `@Target({ TYPE, METHOD, PARAMETER, FIELD })`, `@Retention(RUNTIME)`,`@Documented`,`@Qualifier`
+3.  `@ApplicationScoped`
+4.  JSF (Java Server Faces)
+5.  `javax.enterprise.inject.Instance` - How to inject an instance and re-inject
+6.  `@PersistenceContext`, `InjectionPoint` and `@RequestScoped`
+7.  `@Stateful`, `@Alternative`
+8.  `@Model`
+9.  `<ui:repeat`, `<h:link` and `<f:param`
 10. `<h:dataTable`, `<h:column` and `<f:facets`
 11. `<h:outputFormat ` and `<f:param`
 12. `@Resource` -> [4.1 Resource Injection](https://docs.oracle.com/javaee/7/tutorial/injection001.htm)
@@ -37,13 +37,13 @@ The apps under [jeorg-jee-apps](../..), cover lots of topics. For this app we co
 
 In this web application it is important to understand the basics of these:
 
-1. CDI -> Context Dependency Injection
-2. JSF -> Java Server Faces
-3. JTA -> Java Transaction API
-4. EJB -> Enterprise Java Bean
-5. Bean Validation
-6. Arquillian
-7. JAX - RS
+1.  CDI -> Context Dependency Injection
+2.  JSF -> Java Server Faces
+3.  JTA -> Java Transaction API
+4.  EJB -> Enterprise Java Bean
+5.  Bean Validation
+6.  Arquillian
+7.  JAX - RS
 
 This application offers you a fun overview in a very basic way about Resources, Controllers, Managed Beans, Data Access Objects, Services, Producers and Observers
 
@@ -61,13 +61,13 @@ java -version
 
 After the service is running and deployed you should be able to see pages and JSON's in these addresses:
 
-1. http://localhost:8080/jeorg-jee-app-1-wildfly/app/album/resource/1
-2. http://localhost:8080/jeorg-jee-app-1-wildfly/app/album/resource/2
-3. http://localhost:8080/jeorg-jee-app-1-wildfly/app/album/resource/3
-4. http://localhost:8080/jeorg-jee-app-1-wildfly/app/album/resource/4
-5. [http://localhost:8080/jeorg-jee-app-1-wildfly/](http://localhost:8080/jeorg-jee-app-1-wildfly/)
+1.  http://localhost:8080/jeorg-jee-app-1-wildfly/app/album/resource/1
+2.  http://localhost:8080/jeorg-jee-app-1-wildfly/app/album/resource/2
+3.  http://localhost:8080/jeorg-jee-app-1-wildfly/app/album/resource/3
+4.  http://localhost:8080/jeorg-jee-app-1-wildfly/app/album/resource/4
+5.  [http://localhost:8080/jeorg-jee-app-1-wildfly/](http://localhost:8080/jeorg-jee-app-1-wildfly/)
 
-NOTE: If you start having errors about beans not being available or that you need to use `@Model` or another stereotype to get beans loaded, that could be that the build was not done with Java 8. Remember to makes sure that you are making the build with `Java SE 8`. Java SE 8 isn't strictly
+NOTE: If you start having errors about beans not being available or that you need to use `@Model` or another stereotype to get beans loaded, that could be that the build was not done with Java 8.  Remember to makes sure that you are making the build with `Java SE 8`. Java SE 8 isn't strictly
 necessary to get JEE to work. It can work with Java SE 11. However, this module ensures the study of `JEE7` with both. For the current module you are looking at, Java SE 8 is the one being used.
 
 ## Run Arquillian tests
@@ -88,28 +88,28 @@ Use Arquillian Managed and you should get a screen like this. All options should
 
 ### Online
 
-- [CDI @RequestScoped](https://openejb.apache.org/examples-trunk/cdi-request-scope/)
-- [Wildfly - Quickstart repo](https://github.com/wildfly/quickstart)
-- [Getting Started Developing Applications Guide - WildFly team Version 20.0.0.Final, 2020-06-05T20:49:23Z](https://docs.wildfly.org/20/Getting_Started_Developing_Applications_Guide.html)
-- [DEVELOPING EJB APPLICATIONS](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.2/html-single/developing_ejb_applications/index)
-- [Wild Fly Downloads](https://www.wildfly.org/downloads/)
+-   [CDI @RequestScoped](https://openejb.apache.org/examples-trunk/cdi-request-scope/)
+-   [Wildfly - Quickstart repo](https://github.com/wildfly/quickstart)
+-   [Getting Started Developing Applications Guide - WildFly team Version 20.0.0.Final, 2020-06-05T20:49:23Z](https://docs.wildfly.org/20/Getting_Started_Developing_Applications_Guide.html)
+-   [DEVELOPING EJB APPLICATIONS](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.2/html-single/developing_ejb_applications/index)
+-   [Wild Fly Downloads](https://www.wildfly.org/downloads/)
 
 ### Books
 
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
-- Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 1). Addison Wesley
+-   Jendrock, E. Cervera-Navarro, R. Evans, I. (2014). <i>The Java EE 7 Tutorial</i>. (Fifth Edition Volume 2). Addison Wesley
 - Ćmil, M. (29th December 2014). <i>Java EE 7 Development with WildFly</i>. (First Edition). Packt Publishing
-- Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
-- Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
-- R. Allen, P. J. Bambara, J. (2014). <i>OCM Java EE 6 Enterprise Architect Exam Guide</i>. (First Edition). McGraw-Hill
-- Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
-- Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
+-   Mihalcea, V. (October 2016). <i>High-Performance Java Persistence</i>. (First Edition). Vlad Mihalcea
+-   Gonçalves, A. (June 2013). <i>Beginning Java EE 7</i> (First Edition). Apress
+-   R. Allen, P. J. Bambara, J. (2014). <i>OCM Java EE 6 Enterprise Architect Exam Guide</i>. (First Edition). McGraw-Hill
+-   Gupta, A. (August 2013). <i>Java EE 7 Essentials</i>. (First Edition). O'Reilly
+-   Dr Coward, D. (August 2013). <i>Java EE 7 The Big Picture</i>. (First Edition). McGraw-Hill
 
 ## Context references
 
-- [Cardi B Discography](https://en.wikipedia.org/wiki/Cardi_B_discography)
-- [Sia Discography](https://en.wikipedia.org/wiki/Sia_discography)
-- [Nicky Minaj Discography](https://en.wikipedia.org/wiki/Nicki_Minaj_discography)
+-   [Cardi B Discography](https://en.wikipedia.org/wiki/Cardi_B_discography)
+-   [Sia Discography](https://en.wikipedia.org/wiki/Sia_discography)
+-   [Nicky Minaj Discography](https://en.wikipedia.org/wiki/Nicki_Minaj_discography)
 
 ## About me 👨🏽‍💻🚀🏳️‍🌈
 

@@ -8,7 +8,7 @@
 [![codebeat badge](https://codebeat.co/badges/70235530-f5e9-4254-a0d1-9dc7950c12cc)](https://codebeat.co/projects/github-com-jesperancinha-jeorg-java-ee-7-test-drives-master)
 [![CircleCI](https://circleci.com/gh/jesperancinha/jeorg-java-ee-7-test-drives.svg?style=svg)](https://circleci.com/gh/jesperancinha/jeorg-java-ee-7-test-drives)
 [![Build Status](https://travis-ci.com/jesperancinha/jeorg-java-ee-7-test-drives.svg?branch=main)](https://travis-ci.com/jesperancinha/jeorg-java-ee-7-test-drives)
-[![BCH compliance](https://bettercodehub.com/edge/badge/jesperancinha/jeorg-java-ee-7-test-drives?branch=master)](https://bettercodehub.com/)
+[![BCH compliance](https://bettercodehub.com/edge/badge/jesperancinha/jeorg-java-ee-7-test-drives?branch=main)](https://bettercodehub.com/results/jesperancinha/jeorg-java-ee-7-test-drives)
 [![Build status](https://ci.appveyor.com/api/projects/status/eka55ffpbjkxq55p?svg=true)](https://ci.appveyor.com/project/jesperancinha/jeorg-java-ee-7-test-drives)
 [![Known Vulnerabilities](https://snyk.io/test/github/jesperancinha/jeorg-java-ee-7-test-drives/badge.svg)](https://snyk.io/test/github/jesperancinha/jeorg-java-ee-7-test-drives)
 [![Coverage Status](https://coveralls.io/repos/github/jesperancinha/jeorg-java-ee-7-test-drives/badge.svg?branch=main)](https://coveralls.io/github/jesperancinha/jeorg-java-ee-7-test-drives?branch=main)

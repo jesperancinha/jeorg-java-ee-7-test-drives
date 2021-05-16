@@ -5,11 +5,11 @@
 [![Twitter URL](https://img.shields.io/twitter/url?logoColor=blue&style=social&url=https%3A%2F%2Fimg.shields.io%2Ftwitter%2Furl%3Fstyle%3Dsocial)](https://twitter.com/intent/tweet?text=%20Checkout%20this%20%40github%20repo%20by%20%40joaofse%20%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BB%3A%20https%3A//github.com/jesperancinha/jeorg-java-ee-7-test-drives)
 [![Generic badge](https://img.shields.io/static/v1.svg?label=GitHub&message=Java%20EE%207%20Test%20Drives&color=informational)](https://github.com/jesperancinha/jeorg-java-ee-7-test-drives)
 [![GitHub release](https://img.shields.io/github/release-pre/jesperancinha/jeorg-java-ee-7-test-drives.svg)](#)
-[![jeorg-java-ee-7-test-drives](https://github.com/jesperancinha/jeorg-java-ee-7-test-drives/actions/workflows/jeorg-java-ee-7-test-drives.yml/badge.svg)](https://github.com/jesperancinha/jeorg-java-ee-7-test-drives/actions/workflows/jeorg-java-ee-7-test-drives.yml)
 
 [![CircleCI](https://circleci.com/gh/jesperancinha/jeorg-java-ee-7-test-drives.svg?style=svg)](https://circleci.com/gh/jesperancinha/jeorg-java-ee-7-test-drives)
 [![Build Status](https://travis-ci.com/jesperancinha/jeorg-java-ee-7-test-drives.svg?branch=main)](https://travis-ci.com/jesperancinha/jeorg-java-ee-7-test-drives)
 [![Build status](https://ci.appveyor.com/api/projects/status/eka55ffpbjkxq55p?svg=true)](https://ci.appveyor.com/project/jesperancinha/jeorg-java-ee-7-test-drives)
+[![jeorg-java-ee-7-test-drives](https://github.com/jesperancinha/jeorg-java-ee-7-test-drives/actions/workflows/jeorg-java-ee-7-test-drives.yml/badge.svg)](https://github.com/jesperancinha/jeorg-java-ee-7-test-drives/actions/workflows/jeorg-java-ee-7-test-drives.yml)
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/89cc4b270cda4a448ce4fa895b30ec55)](https://www.codacy.com/manual/jofisaes/jeorg-java-ee-7-test-drives?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jesperancinha/jeorg-java-ee-7-test-drives&amp;utm_campaign=Badge_Grade)
 [![codebeat badge](https://codebeat.co/badges/70235530-f5e9-4254-a0d1-9dc7950c12cc)](https://codebeat.co/projects/github-com-jesperancinha-jeorg-java-ee-7-test-drives-master)

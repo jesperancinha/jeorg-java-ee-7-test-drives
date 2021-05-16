@@ -242,11 +242,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.wildfly</groupId>
-            <artifactId>wildfly-ejb3</artifactId>
-            <version>16.0.0.Final</version>
-        </dependency>
-        <dependency>
             <groupId>org.jboss.spec.javax.faces</groupId>
             <artifactId>jboss-jsf-api_2.2_spec</artifactId>
             <version>2.2.13</version>

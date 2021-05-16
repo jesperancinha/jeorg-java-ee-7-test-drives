@@ -1,6 +1,5 @@
 package org.jesperancinha.jtd.jee.mastery1.domain3;
 
-import org.eclipse.jgit.annotations.NonNull;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
@@ -10,15 +9,12 @@ import java.io.Serializable;
 @Embeddable
 @IdClass(AlbumCompositeKey.class)
 public class Lyric implements Serializable {
-    @NonNull
     @Column
     private String lyric1;
 
-    @NonNull
     @Column
     private String lyric2;
 
-    @NonNull
     @Column
     private String lyric3;
 

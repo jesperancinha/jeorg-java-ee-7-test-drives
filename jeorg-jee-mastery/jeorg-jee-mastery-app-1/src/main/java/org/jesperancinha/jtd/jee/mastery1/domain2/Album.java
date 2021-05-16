@@ -1,7 +1,5 @@
 package org.jesperancinha.jtd.jee.mastery1.domain2;
 
-import org.eclipse.jgit.annotations.NonNull;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -13,17 +11,14 @@ import javax.persistence.Version;
 public class Album {
 
     @Id
-    @NonNull
     @Column
     private String lyric1;
 
     @Id
-    @NonNull
     @Column
     private String lyric2;
 
     @Id
-    @NonNull
     @Column
     private String lyric3;
 
